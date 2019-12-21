@@ -7,8 +7,8 @@
                     <template v-slot:default>
                     <tbody>
                         <tr v-for="profile in profiles" :key="profile.name">
-                            <td width="25%">{{ profile.title }}</td>
-                            <td width="75%">{{ profile.text }}</td>
+                            <td width="30%">{{ profile.title }}</td>
+                            <td width="70%">{{ profile.text }}</td>
                         </tr>
                     </tbody>
                     </template>
@@ -24,6 +24,9 @@ import Title from '../components/Title.vue';
 export default {
     components: {
     Title
+  },
+	mounted: function(){
+    document.title = "会社概要";
   },
     data () {
       return {
@@ -43,18 +46,6 @@ export default {
           {
             title: '代表',
             text: '中山 大治郎(昭和35年6月18日生)',
-          },
-          {
-            title: '取引銀行',
-            text: '岐阜信用金庫真砂支店 十六銀行本店 三井住友銀行岐阜支店 東京都民銀行大森支店 東日本銀行浜松町支店',
-          },
-          {
-            title: '売上高',
-            text: '平成29年度 8,985,913(千円) 平成30年度 8,347,028(千円)',
-          },
-          {
-            title: '主な取引先',
-            text: '東日本旅客鉄道株式会社・財) 東京都交通局協力会・財) 名古屋市交通局協力会・西日本旅客鉄道株式会社',
           },
           {
             title: '会社の沿革',

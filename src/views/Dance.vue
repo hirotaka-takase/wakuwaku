@@ -1,16 +1,17 @@
 <template>
     <v-container fill-width py-12 mb-10>
-        <v-card class="mx-auto">
+        <v-card class="mx-auto mb-12">
             <v-img
               class="white--text align-end"
               height="270px"
-              src="../assets/img/dance.jpg"
+              src="../assets/img/dancer.jpg"
+              alt="ダンサー達"
             >
             </v-img>
             <v-card-text>
-                <Title :title="'キッズダンスコンテスト'"></Title>
+                <Title :title="'わくフェスキッズダンスコンテスト'"></Title>
                 <div align="center">
-                  <h4 class="headline">★九州ナンバーワンキッズはどのチームだ!!</h4>
+                  <h4 class="title">★ナンバーワンはどのチームだ！！</h4>
                   <p class="subtitle-1">
                       小学生の部（土曜日）と中学生（日曜日）に分かれて１チームごとに踊り審査員がその中から順位を決める<br>
                       入賞チームはイベント最後に発表。その際に、クリスタルトロフィー・副賞を渡す。
@@ -20,8 +21,8 @@
                     <template v-slot:default>
                     <tbody>
                         <tr v-for="item in details" :key="item.name">
-                        <td width="20%">{{ item.title }}</td>
-                        <td width="80%">{{ item.text }}</td>
+                        <td width="35%" class="font-weight-bold">{{ item.title }}</td>
+                        <td width="65%" style="white-space:pre-wrap; word-wrap:break-word;">{{ item.text }}</td>
                         </tr>
                     </tbody>
                     </template>
@@ -30,19 +31,96 @@
                     <template v-slot:default>
                     <tbody>
                         <tr v-for="item in results" :key="item.name">
-                        <td width="20%">{{ item.title }}</td>
-                        <td width="80%">{{ item.text }}</td>
+                        <td width="30%" class="font-weight-bold">{{ item.title }}</td>
+                        <td width="70%">{{ item.text }}</td>
                         </tr>
                     </tbody>
                     </template>
                 </v-simple-table>
-                <p align="center" class="headline">タイムテーブル</p>
-                <v-list-item align="center" two-line class="d-block" widh="100%">
-                  <v-list-item-content v-for="item in schedules" :key="item.time">
-                      <v-list-item-title>{{ item.time }}</v-list-item-title>
-                      <v-list-item-subtitle>{{ item.text }}</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>
+                <p align="center" class="title font-weight-bold">
+                    コンテストルール
+                </p>
+                <ul class="subtitle-1 mb-8">
+                    <li>
+                      小学生部門<br>
+                      メンバー全員が小学6年生以下
+                      (メンバーに一人でも中学生が含まれる場合は中学生部門になります)
+                    </li>
+                    <li>
+                      中学生部門<br>
+                      メンバー全員が中学3年生以下
+                    </li>
+                    <li>
+                      中学生部門<br>
+                      メンバー全員が中学3年生以下
+                    </li>
+                    <li>
+                      メンバー人数制限は2人以上です
+                    </li>
+                    <li>
+                      入賞チームには商品券、トロフィーの授与があります
+                    </li>
+                    <li>
+                      音源は1チーム4分以内。規定時間を越えると失格となりますので注意してください
+                    </li>
+                    <li>
+                      エントリー後のチーム名の変更不可
+                    </li>
+                    <li>
+                      出演順はあらかじめこちらでくじ引きにて決めさせていただき、当日に発表いたします
+                    </li>
+                </ul>
+            <div align="center">
+              <v-btn to="participants_dance" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
+            </div>
+          </v-card-text>
+        </v-card>
+        <v-card class="mx-auto mb-12">
+            <v-img
+              class="white--text align-end"
+              height="270px"
+              src="../assets/img/cheer.jpg"
+              alt="チアダンス"
+            >
+            </v-img>
+            <v-card-text>
+                <Title :title="'チアダンスショー参加者募集！'"></Title>
+              <div align="center" class="mb-5">
+                  <h4 class="title">募集要項</h4>
+              </div>
+                <ul class="subtitle-1 mb-8">
+                    <li>
+                      小学生部門<br>
+                      メンバー全員が小学6年生以下
+                      (メンバーに一人でも中学生が含まれる場合は中学生部門になります)
+                    </li>
+                    <li>
+                      中学生部門<br>
+                      メンバー全員が中学3年生以下
+                    </li>
+                    <li>
+                      中学生部門<br>
+                      メンバー全員が中学3年生以下
+                    </li>
+                    <li>
+                      メンバー人数制限は2人以上です
+                    </li>
+                    <li>
+                      入賞チームには商品券、トロフィーの授与があります
+                    </li>
+                    <li>
+                      音源は1チーム4分以内。規定時間を越えると失格となりますので注意してください
+                    </li>
+                    <li>
+                      エントリー後のチーム名の変更不可
+                    </li>
+                    <li>
+                      出演順はあらかじめこちらでくじ引きにて決めさせていただき、当日に発表いたします
+                    </li>
+                </ul>
+            <div align="center">
+              <v-btn to="participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
+            </div>
             </v-card-text>
         </v-card>
     </v-container>
@@ -54,6 +132,9 @@ import Title from '../components/Title.vue';
   export default {
     components: {
       Title
+    },
+    mounted: function(){
+      document.title = "ダンスコンテスト＆ショー";
     },
     data () {
       return {
@@ -72,11 +153,15 @@ import Title from '../components/Title.vue';
           },
           {
             title: 'チーム数',
-            text: '30チーム（合計60チーム）'
+            text: '各30チーム'
           },
           {
             title: 'ジャンル',
             text: 'ジャンル規定なし'
+          },
+          {
+            title: 'MC&ジャッジ',
+            text: 'MCヒロ | bigsky bigsky bigsky'
           },
         ],
         results: [
@@ -97,41 +182,20 @@ import Title from '../components/Title.vue';
             text: 'クリスタルトロフィー授与 | （副賞） 小学生・中学生の部 3千円相当商品券贈呈'
           },
         ],
-        schedules: [
-          {
-            time: '10:00',
-            text: '受付開始'
-          },
-          {
-            time: '11:00',
-            text: '審査員紹介（ダンスショーケース）'
-          },
-          {
-            time: '11:30',
-            text: 'コンテスト1部 15チーム✖︎5分（1チーム) = 75分'
-          },
-          {
-            time: '12:40',
-            text: '休憩（30分）'
-          },
-          {
-            time: '13:10',
-            text: 'コンテスト2部 15チーム✖︎5分（1チーム) = 65分'
-          },
-          {
-            time: '14:25',
-            text: '休憩・審査員結果集計（65分）'
-          },
-          {
-            time: '15:30',
-            text: '結果発表・表彰・審査員総評'
-          },
-          {
-            time: '16:00',
-            text: '終了'
-          },
-        ]
       }
     },
   }
 </script>
+
+<style scoped>
+@media (max-width: 480px) {
+table tr td {
+   width: 100%;
+   display: block!important;
+   min-height: 50px;
+   height: auto;
+   padding: 10px 0;
+   text-align: center;
+}
+}
+</style>

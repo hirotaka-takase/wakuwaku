@@ -5,22 +5,41 @@
               class="white--text align-end"
               height="270px"
               src="../assets/img/inu.jpeg"
+              alt="犬"
             >
             </v-img>
             <v-card-text>
                 <Title :title="'わんわんカーニバル'"></Title>
-                <p align="center" class="headline">
-                    ブースとイベントステージ
+                <p align="center" class="title">
+                    ブース
                 </p>
-                <v-treeview
-                    dense
-                    hoverable
-                    color="warning"
-                    activatable
-                    open-on-click
-                    :items="items"
-                    class="subtitle-1"
-                ></v-treeview>
+                <v-expansion-panels popout class="mb-12">
+                  <v-expansion-panel
+                    v-for="item in booth"
+                    :key="item.id"
+                    
+                  >
+                    <v-expansion-panel-header class="font-weight-bold">{{ item.name }}</v-expansion-panel-header>
+                    <v-expansion-panel-content v-for="child in item.children" :key="child.id">
+                      {{ child.name }}
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-expansion-panels>
+                <p align="center" class="title">
+                    イベントステージ
+                </p>
+                <v-expansion-panels popout class="mb-10">
+                  <v-expansion-panel
+                    v-for="item in event"
+                    :key="item.id"
+                    
+                  >
+                    <v-expansion-panel-header class="font-weight-bold">{{ item.name }}</v-expansion-panel-header>
+                    <v-expansion-panel-content v-for="child in item.children" :key="child.id">
+                      {{ child.name }}
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-expansion-panels>
             </v-card-text>
         </v-card>
     </v-container>
@@ -33,12 +52,14 @@ import Title from '../components/Title.vue';
     components: {
       Title
     },
-
+    mounted: function(){
+    document.title = "わんわんカーニバル";
+    },
     data: () => ({
-      items: [
+      booth: [
         {
           id: 1,
-          name: '(ブース) ショップ :',
+          name: 'ショップ',
           children: [
             { id: 2, name: 'ペットフード' },
             { id: 3, name: '雑貨用品（リード・食器など）' },
@@ -52,7 +73,7 @@ import Title from '../components/Title.vue';
         },
         {
           id: 10,
-          name: '(ブース) 関連ブース :',
+          name: '関連ブース',
           children: [
             { id: 11, name: 'ペットホテル' },
             { id: 12, name: 'トリミング学校' },
@@ -65,7 +86,7 @@ import Title from '../components/Title.vue';
         },
         {
           id: 18,
-          name: '(ブース) 福祉 :',
+          name: '福祉',
           children: [
             { id: 19, name: 'ペットの介護情報' },
             { id: 20, name: 'ペットの急な病気、ケガの応急処置' },
@@ -81,14 +102,16 @@ import Title from '../components/Title.vue';
         },
         {
           id: 29,
-          name: '(ブース) 教養ブース :',
+          name: '教養ブース',
           children: [
                 { id: 30, name: '現職トリマーがプロに教えるカッティング技術' },
           ],
         },
+      ],
+      event: [
         {
           id: 31,
-          name: '(イベントステージ) 観覧型 :',
+          name: '観覧型',
           children: [
                 { id: 32, name: 'スタイリングショー（ホットモデルズ主催)' },
                 { id: 33, name: 'チャンピョン犬' },
@@ -97,7 +120,7 @@ import Title from '../components/Title.vue';
         },
         {
           id: 35,
-          name: '(イベントステージ) 参加型 :',
+          name: '参加型',
           children: [
                 { id: 36, name: '愛犬ファッションショー' },
                 { id: 37, name: '愛ペットと人のコスプレショー' },
@@ -108,7 +131,7 @@ import Title from '../components/Title.vue';
         },
         {
           id: 41,
-          name: '(イベントステージ) 広場 :',
+          name: '広場',
           children: [
                 { id: 42, name: '運動会' },
                 { id: 43, name: '徒競走' },
@@ -120,7 +143,7 @@ import Title from '../components/Title.vue';
                 { id: 49, name: '同犬種交流活動' },
           ],
         },
-      ],
+      ]
     }),
   }
 </script>

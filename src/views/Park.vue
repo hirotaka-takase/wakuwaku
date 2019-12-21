@@ -4,15 +4,15 @@
             <v-img
               class="white--text align-end"
               height="270px"
-              src="../assets/img/park.jpg"
+              src="../assets/img/kids.jpg"
+              alt="子供達"
             >
             </v-img>
             <v-card-text>
+              <div align="center" class="mb-5">
                 <Title align="center" :title="'子供の楽園'"></Title>
-                <div align="center">
-                  <h4 class="headline">〜思いっきり遊んで思いっきり楽しもう!〜</h4>
-                  <p class="title">内容</p>
-                </div>
+                  <h4 class="title">〜思いっきり遊んで思いっきり楽しもう!〜</h4>
+              </div>
                 <ul class="px-12" v-for="item in contents" :key="item.name">
                     <li class="subtitle-1">{{ item.name }}</li>
                 </ul>
@@ -27,6 +27,9 @@ import Title from '../components/Title.vue';
 export default {
     components: {
       Title
+    },
+    mounted: function(){
+      document.title = "子供の楽園";
     },
     data: () => ({
       contents: [
@@ -72,7 +75,7 @@ export default {
         },
         {
           id: 11,
-          name: '縁日コーナー 「・けん玉、・わなげ、・射的、・ボールすくい、・お菓子詰め放題、・的当てゲーム」',
+          name: '縁日コーナー 「けん玉・わなげ・射的・ボールすくい・お菓子詰め放題・的当てゲーム」',
         },
       ],
     }),

@@ -21,6 +21,9 @@ export default {
     components: {
     Title
   },
+	mounted: function(){
+	document.title = "ペット同伴について";
+  },
   data() {
     return {
       rules: [

@@ -21,6 +21,11 @@ const routes = [
     component: () => import('../views/Participants_dance.vue')
   },
   {
+    path: '/participants_cheer',
+    name: 'participants_cheer',
+    component: () => import('../views/Participants_cheer.vue')
+  },
+  {
     path: '/participants_store',
     name: 'participants_store',
     component: () => import('../views/Participants_store.vue')
