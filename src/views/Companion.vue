@@ -1,10 +1,10 @@
 <template>
-    <v-container fill-width py-12 mb-10>
+    <v-container fill-width py-12 mb-5>
         <v-card class="mx-auto">
             <v-card-text>
-                <Title :title="'ペット同伴について'"></Title>
+                <Title :title="'愛犬家のみなさまへ'"></Title>
                 <ul class="text--primary">
-                    <li v-for="rule in rules" :key="rule.id" class="subtitle-1 mb-3">
+                    <li v-for="rule in rules" :key="rule.id" class="subtitle-1 mb-5">
                         {{ rule.text }}
                     </li>            
                 </ul>
@@ -27,14 +27,10 @@ export default {
   data() {
     return {
       rules: [
-        {id: 1,text: '同伴するわんちゃんには必ず予防注射をお願いします。'},
-        {id: 2,text: '家庭での環境と異なるため、犬が思わぬ行動を取ることがあります。飼い主は常に犬から目を話さないよう注意し、他のお客様や犬の迷惑にならないようにしてください'},
-        {id: 3,text: '攻撃的になる恐れのあるワンちゃんは入場できません。退場していただく可能性があります。'},
-        {id: 4,text: '会場内でワンちゃん同士が喧嘩やトラブルが起きた場合は、当事者同士で対応していただきます。'},
-        {id: 5,text: 'リードは必ず短くお持ちください。'},
-        {id: 6,text: 'トラブルの原因にもなりますので、リードは協力つけてください。'},
-        {id: 7,text: 'ワンちゃん用にトイレはご用意いたしますが、所定の場所以外でしてしまった場合は必ず対処の方よろしくお願いします。'},
-        {id: 8,text: '排出物はトイレに流さず、各自お持ち帰りください。'},
+        {id: 1,text: 'ルール、マナーの遵守をお願い致します。'},
+        {id: 2,text: 'ワンちゃんの管理は自己の責任で行っていただきます。'},
+        {id: 3,text: 'トラブルの原因となりますので会場内では必ずリードをつけてください。'},
+        {id: 4,text: '主催者のルールに従っていただけない場合はご退場させていただくことがあります。'},
       ]
     }
   }  

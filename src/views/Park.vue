@@ -1,10 +1,35 @@
 <template>
-    <v-container fill-width py-12 mb-10>
+  <div>
+      <v-parallax
+      dark
+      id="a"
+      height="300"
+      src="../assets/img/park_kid.jpg"
+    >
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col class="text-center" cols="12">
+          <p>
+            <span
+              id="top-text"
+              v-for="(t, index) in text"
+              :key="index"
+              class="item-animation font-weight-thin"
+              :style="{animationDelay: index*100+'ms'}"
+              v-text="t"
+            />
+          </p>
+        </v-col>
+      </v-row>
+    </v-parallax>
+    <v-container fill-width py-12 mb-5>
         <v-card class="mx-auto">
             <v-img
               class="white--text align-end"
               height="270px"
-              src="../assets/img/kids.jpg"
+              src="../assets/img/kid.jpg"
               alt="子供達"
             >
             </v-img>
@@ -19,6 +44,7 @@
             </v-card-text>
         </v-card>
     </v-container>
+  </div>
 </template> 
 
 <script>
@@ -32,6 +58,7 @@ export default {
       document.title = "子供の楽園";
     },
     data: () => ({
+      text: 'Wakuwaku Festival',
       contents: [
         {
           id: 1,
@@ -81,4 +108,3 @@ export default {
     }),
   }
 </script>
-

@@ -1,150 +1,115 @@
 <template>
-    <v-container fill-width py-12 mb-10>
-        <v-card class="mx-auto">
-            <v-img
-              class="white--text align-end"
-              height="270px"
-              src="../assets/img/inu.jpeg"
-              alt="犬"
-            >
-            </v-img>
-            <v-card-text>
-                <Title :title="'わんわんカーニバル'"></Title>
-                <p align="center" class="title">
-                    ブース
-                </p>
-                <v-expansion-panels popout class="mb-12">
-                  <v-expansion-panel
-                    v-for="item in booth"
-                    :key="item.id"
-                    
-                  >
-                    <v-expansion-panel-header class="font-weight-bold">{{ item.name }}</v-expansion-panel-header>
-                    <v-expansion-panel-content v-for="child in item.children" :key="child.id">
-                      {{ child.name }}
-                    </v-expansion-panel-content>
-                  </v-expansion-panel>
-                </v-expansion-panels>
-                <p align="center" class="title">
-                    イベントステージ
-                </p>
-                <v-expansion-panels popout class="mb-10">
-                  <v-expansion-panel
-                    v-for="item in event"
-                    :key="item.id"
-                    
-                  >
-                    <v-expansion-panel-header class="font-weight-bold">{{ item.name }}</v-expansion-panel-header>
-                    <v-expansion-panel-content v-for="child in item.children" :key="child.id">
-                      {{ child.name }}
-                    </v-expansion-panel-content>
-                  </v-expansion-panel>
-                </v-expansion-panels>
+<div>
+      <v-parallax
+      dark
+      height="320"
+      src="../assets/img/dog3.jpg"
+    >
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col class="text-center" cols="12">
+          <p>
+            <span
+              id="top-text"
+              v-for="(t, index) in text"
+              :key="index"
+              class="item-animation font-weight-thin"
+              :style="{animationDelay: index*100+'ms'}"
+              v-text="t"
+            />
+          </p>
+        </v-col>
+      </v-row>
+    </v-parallax>
+<v-container fill-width py-12>
+  <v-card class="mx-auto px-10 py-5">
+    <v-card-text class="text-center">
+        <Title :title="'愛犬家大集合'"></Title>
+        <p class="title text--primary">ドッグランやその他コンテンツも充実!!</p>
+    </v-card-text>
+    <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+        <v-timeline-item
+        v-for="(item, i) in items"
+        :key="i"
+        :color="item.color"
+        :icon="item.icon"
+        fill-dot
+        >
+        <v-card
+            :color="item.color"
+            dark
+        >
+            <v-card-title class="title">{{ item.title }}</v-card-title>
+            <v-card-text class="white pt-4 text--primary">
+            <p>{{ item.text }}</p>
             </v-card-text>
         </v-card>
-    </v-container>
-</template> 
+        </v-timeline-item>
+    </v-timeline>
+    <v-divider></v-divider>
+    <ul>
+        <v-card-text tag="li">
+            <p class="mb-0">ペットカットしてくれるトリマーさん大募集！！</p>
+            <v-btn class="ma-2" outlined color="primary" to="/carnival/form/trim">募集要項・応募希望</v-btn>
+        </v-card-text>
+                <v-card-text tag="li">
+            <p class="mb-0">ペットグッズ出展者大募集！！</p>
+            <v-btn class="ma-2" outlined color="primary" to="/carnival/form/store">募集要項・出展希望</v-btn>
+        </v-card-text>
+        <v-card-text tag="li">
+            <p class="mb-0">同時にフリーマーケットも開催！！出展者大募集！！</p>
+            <v-btn class="ma-2" outlined color="primary" to="/carnival/form/freemarket">募集要項・出展希望</v-btn>
+        </v-card-text>
+    </ul>
+  </v-card>
+</v-container>
+</div>
+</template>
 
 <script>
 import Title from '../components/Title.vue';
 
   export default {
+    name: 'pets',
     components: {
-      Title
-    },
-    mounted: function(){
-    document.title = "わんわんカーニバル";
-    },
+     Title,
+  },
     data: () => ({
-      booth: [
-        {
-          id: 1,
-          name: 'ショップ',
-          children: [
-            { id: 2, name: 'ペットフード' },
-            { id: 3, name: '雑貨用品（リード・食器など）' },
-            { id: 4, name: '服' },
-            { id: 5, name: 'グルーミング' },
-            { id: 6, name: '時短シャンプー' },
-            { id: 7, name: '自然食品' },
-            { id: 8, name: '冷感マットなどエコ商品' },
-            { id: 9, name: '＊普段販売されない優れもの特集(ショードック関連)' },
-          ],
+      text: 'Wakuwaku Festival',
+      items: [
+        { 
+          title: 'ペットカットスタイリングショー',
+          text: '好みのスタイルを見つけてね！',
+          color: 'red lighten-2',
+          icon: 'fas fa-cut',
         },
         {
-          id: 10,
-          name: '関連ブース',
-          children: [
-            { id: 11, name: 'ペットホテル' },
-            { id: 12, name: 'トリミング学校' },
-            { id: 13, name: '保険' },
-            { id: 14, name: 'お仕事コーナー（グルーミング体験）' },
-            { id: 15, name: '写真スポット（インスタ映え）' },
-            { id: 16, name: '愛犬似顔絵イラスト）' },
-            { id: 17, name: '愛犬そっくりカフェイラスト' },
-          ],
+          title: '愛犬ファッションショー',
+          text: 'かわいいファッションを自慢しよう!!',
+          color: 'purple darken-1',
+          icon: 'fas fa-tshirt',
         },
         {
-          id: 18,
-          name: '福祉',
-          children: [
-            { id: 19, name: 'ペットの介護情報' },
-            { id: 20, name: 'ペットの急な病気、ケガの応急処置' },
-            { id: 21, name: '夜間動物病院の情報' },
-            { id: 22, name: 'ペットの車椅子、義足製作等の取り込み' },
-            { id: 23, name: 'グルーミング' },
-            { id: 24, name: 'カット、爪切り、足裏靴、歯石取り' },
-            { id: 25, name: '歯磨き教室、お手入れ、ボディーケア' },
-            { id: 26, name: 'ペット悩み相談' },
-            { id: 27, name: '災害時の心得（ペットと一緒に避難するには' },
-            { id: 28, name: '獣医さんによる検診、健康診断' },
-          ],
+          title: 'かけっこ選手権',
+          text: 'うちの子がナンバーワン！！',
+          color: 'green lighten-1',
+          icon: 'fas fa-running',
         },
         {
-          id: 29,
-          name: '教養ブース',
-          children: [
-                { id: 30, name: '現職トリマーがプロに教えるカッティング技術' },
-          ],
+          title: 'ペット関係グッズ売場',
+          text: 'なんと40店舗以上！！',
+          color: 'indigo',
+          icon: 'as fa-store-alt',
         },
       ],
-      event: [
-        {
-          id: 31,
-          name: '観覧型',
-          children: [
-                { id: 32, name: 'スタイリングショー（ホットモデルズ主催)' },
-                { id: 33, name: 'チャンピョン犬' },
-                { id: 34, name: '珍しい犬種、見栄えのする犬種（フルコートのアフガン、ホルゾイ等)' },
-          ],
-        },
-        {
-          id: 35,
-          name: '参加型',
-          children: [
-                { id: 36, name: '愛犬ファッションショー' },
-                { id: 37, name: '愛ペットと人のコスプレショー' },
-                { id: 38, name: 'ビンゴ大会（番犬ボールを犬が選ぶ' },
-                { id: 39, name: '◎✖︎クイズ（ペットに関する問題）' },
-                { id: 40, name: 'うちの子ナンバー１、わんわん競争' },
-          ],
-        },
-        {
-          id: 41,
-          name: '広場',
-          children: [
-                { id: 42, name: '運動会' },
-                { id: 43, name: '徒競走' },
-                { id: 44, name: 'ジャンプ' },
-                { id: 45, name: '待て大会' },
-                { id: 46, name: 'トレーナーによるしつけ教室' },
-                { id: 47, name: '散歩体験' },
-                { id: 48, name: 'トリミング競技会' },
-                { id: 49, name: '同犬種交流活動' },
-          ],
-        },
-      ]
     }),
   }
 </script>
 
+<style scoped>
+p.title {
+  font-weight: bold;
+}
+</style>

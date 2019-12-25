@@ -16,19 +16,14 @@ const routes = [
     component: () => import('../views/Philosophy.vue')
   },
   {
-    path: '/participants_dance',
+    path: '/form/participants_dance',
     name: 'participants_dance',
-    component: () => import('../views/Participants_dance.vue')
+    component: () => import('../views/form/Participants_dance.vue')
   },
   {
-    path: '/participants_cheer',
+    path: '/form/participants_cheer',
     name: 'participants_cheer',
-    component: () => import('../views/Participants_cheer.vue')
-  },
-  {
-    path: '/participants_store',
-    name: 'participants_store',
-    component: () => import('../views/Participants_store.vue')
+    component: () => import('../views//form/Participants_cheer.vue')
   },
   {
     path: '/companion',
@@ -36,14 +31,29 @@ const routes = [
     component: () => import('../views/Companion.vue')
   },
   {
-    path: '/contact',
+    path: '/form/contact',
     name: 'contact',
-    component: () => import('../views/Contact.vue')
+    component: () => import('../views/form/Contact.vue')
   },
   {
     path: '/carnival',
     name: 'carnival',
     component: () => import('../views/Carnival.vue')
+  },
+  {
+    path: '/carnival/form/trim',
+    name: 'trim',
+    component: () => import('../views/form/Trim.vue')
+  },
+  {
+    path: '/carnival/form/store',
+    name: 'store',
+    component: () => import('../views/form/Store.vue')
+  },
+  {
+    path: '/carnival/form/freemarket',
+    name: 'freemarket',
+    component: () => import('../views/form/Freemarket.vue')
   },
   {
     path: '/dance',
@@ -59,13 +69,20 @@ const routes = [
     path: '/outline',
     name: 'outline',
     component: () => import('../views/Outline.vue')
-  }
+  },
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  },
+  routes,
 })
 
 export default router

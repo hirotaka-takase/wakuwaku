@@ -1,5 +1,5 @@
 <template>
-    <v-container fill-width py-12 mb-10>
+    <v-container fill-width py-12 mb-5>
         <v-card class="mx-auto">
             <v-card-text>
                 <Title :title="'会社概要'"></Title>

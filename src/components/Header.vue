@@ -7,11 +7,9 @@
       fixed
     >
       <v-toolbar-title>
-          <router-link class="headline" tag="h1" to="/" text--white>WAKUWAKU FESTIVAL</router-link> 
+          <router-link class="title" tag="h1" to="/" text--white>わくわくフェスティバル</router-link> 
       </v-toolbar-title>
-
       <v-spacer></v-spacer>
-
       <v-menu
         left
         bottom
@@ -46,25 +44,25 @@ export default {
         headers: [
           {
             title: 'わくフェス理念',
-            to: 'philosophy',
+            to: '/philosophy',
             icon: 'fas fa-medal',
             color: 'red'
           },
           {
-            title: '出者・出店者希望',
-            to: 'participants_dance',
+            title: 'コンテスト＆チアダンスショー',
+            to: '/form/participants_dance',
             icon: 'fas fa-child',
             color: 'green'
           },
           {
-            title: 'ペット同伴について',
-            to: 'companion',
+            title: '愛犬家のみなさまへ',
+            to: '/companion',
             icon: 'fas fa-dog',
             color: 'blue'
           },
           {
             title: 'お問い合わせ',
-            to: 'contact',
+            to: '/form/contact',
             icon: 'far fa-envelope',
             color: 'purple'
           },

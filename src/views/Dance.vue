@@ -1,10 +1,34 @@
 <template>
-    <v-container fill-width py-12 mb-10>
+<div>
+      <v-parallax
+      dark
+      height="300"
+      src="../assets/img/dance.jpg"
+    >
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col class="text-center" cols="12">
+          <p>
+            <span
+              id="top-text"
+              v-for="(t, index) in text"
+              :key="index"
+              class="item-animation font-weight-thin"
+              :style="{animationDelay: index*100+'ms'}"
+              v-text="t"
+            />
+          </p>
+        </v-col>
+      </v-row>
+    </v-parallax>
+    <v-container fill-width py-12 mb-5>
         <v-card class="mx-auto mb-12">
             <v-img
               class="white--text align-end"
               height="270px"
-              src="../assets/img/dancer.jpg"
+              src="../assets/img/tmp.jpg"
               alt="ダンサー達"
             >
             </v-img>
@@ -71,11 +95,11 @@
                     </li>
                 </ul>
             <div align="center">
-              <v-btn to="participants_dance" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
+              <v-btn to="/form/participants_dance" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
             </div>
           </v-card-text>
         </v-card>
-        <v-card class="mx-auto mb-12">
+        <v-card id="card-color" class="mx-auto">
             <v-img
               class="white--text align-end"
               height="270px"
@@ -83,47 +107,15 @@
               alt="チアダンス"
             >
             </v-img>
-            <v-card-text>
-                <Title :title="'チアダンスショー参加者募集！'"></Title>
-              <div align="center" class="mb-5">
-                  <h4 class="title">募集要項</h4>
+            <v-card-text class="py-10">
+            <Title :title="'チアダンスショー参加者募集！'"></Title>
+              <div align="center">
+                <v-btn to="/form/participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
               </div>
-                <ul class="subtitle-1 mb-8">
-                    <li>
-                      小学生部門<br>
-                      メンバー全員が小学6年生以下
-                      (メンバーに一人でも中学生が含まれる場合は中学生部門になります)
-                    </li>
-                    <li>
-                      中学生部門<br>
-                      メンバー全員が中学3年生以下
-                    </li>
-                    <li>
-                      中学生部門<br>
-                      メンバー全員が中学3年生以下
-                    </li>
-                    <li>
-                      メンバー人数制限は2人以上です
-                    </li>
-                    <li>
-                      入賞チームには商品券、トロフィーの授与があります
-                    </li>
-                    <li>
-                      音源は1チーム4分以内。規定時間を越えると失格となりますので注意してください
-                    </li>
-                    <li>
-                      エントリー後のチーム名の変更不可
-                    </li>
-                    <li>
-                      出演順はあらかじめこちらでくじ引きにて決めさせていただき、当日に発表いたします
-                    </li>
-                </ul>
-            <div align="center">
-              <v-btn to="participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
-            </div>
             </v-card-text>
         </v-card>
     </v-container>
+</div>
 </template> 
 
 <script>
@@ -138,6 +130,7 @@ import Title from '../components/Title.vue';
     },
     data () {
       return {
+        text: 'Wakuwaku Festival',
         details: [
           {
             title: '日時',
