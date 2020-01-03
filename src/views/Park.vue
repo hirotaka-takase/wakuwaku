@@ -2,9 +2,8 @@
   <div>
       <v-parallax
       dark
-      id="a"
       height="300"
-      src="../assets/img/park_kid.jpg"
+      src="../assets/img/park1.jpg"
     >
       <v-row
         align="center"
@@ -29,14 +28,15 @@
             <v-img
               class="white--text align-end"
               height="270px"
-              src="../assets/img/kid.jpg"
+              src="../assets/img/park2.jpg"
               alt="子供達"
             >
             </v-img>
             <v-card-text>
               <div align="center" class="mb-5">
                 <Title align="center" :title="'子供の楽園'"></Title>
-                  <h4 class="title">〜思いっきり遊んで思いっきり楽しもう!〜</h4>
+                <h4 class="title">〜思いっきり遊んで思いっきり楽しもう!〜</h4>
+                <p class="subtitle-1">（休憩スペースも完備）</p>
               </div>
                 <ul class="px-12" v-for="item in contents" :key="item.name">
                     <li class="subtitle-1">{{ item.name }}</li>
@@ -66,15 +66,15 @@ export default {
         },
         {
           id: 2,
-          name: '巨大迷路',
+          name: 'わたがし',
         },
         {
           id: 3,
-          name: 'スライダー',
+          name: 'ポップコーン',
         },
         {
           id: 4,
-          name: 'ボルダリングアスレチック',
+          name: 'スイカ割り',
         },
         {
           id: 5,
@@ -90,18 +90,10 @@ export default {
         },
         {
           id: 8,
-          name: 'ストラックアウト',
+          name: 'キッズスペース（小さいお子様連れのお母さんも安心!!）',
         },
         {
           id: 9,
-          name: '靴飛ばし（飛距離ベスト3を提示、商品はお菓子詰め合わせ放題',
-        },
-        {
-          id: 10,
-          name: 'キッズスペース',
-        },
-        {
-          id: 11,
           name: '縁日コーナー 「けん玉・わなげ・射的・ボールすくい・お菓子詰め放題・的当てゲーム」',
         },
       ],

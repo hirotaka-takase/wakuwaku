@@ -20,14 +20,14 @@
           </v-btn>
         </template>
 
-        <v-list width="300px">
+        <v-list>
           <v-list-item
             v-for="header in headers"
             :key="header.title"
             @click="() => {}"
           >
             <v-list-item-title>
-              <router-link tag="nav" :to="header.to"><v-icon class="pr-3" :color="header.color">{{ header.icon }}</v-icon>{{ header.title }}</router-link>
+              <router-link style="white-space:pre-wrap; word-wrap:break-word;" tag="nav" :to="header.to"><v-icon class="pr-3" :color="header.color">{{ header.icon }}</v-icon>{{ header.title }}</router-link>
             </v-list-item-title>
           </v-list-item>
         </v-list>
@@ -49,7 +49,8 @@ export default {
             color: 'red'
           },
           {
-            title: 'コンテスト＆チアダンスショー',
+            title: `コンテスト＆
+                チアダンスショー`,
             to: '/form/participants_dance',
             icon: 'fas fa-child',
             color: 'green'

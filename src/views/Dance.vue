@@ -3,7 +3,7 @@
       <v-parallax
       dark
       height="300"
-      src="../assets/img/dance.jpg"
+      src="../assets/img/dance1.jpg"
     >
       <v-row
         align="center"
@@ -23,12 +23,24 @@
         </v-col>
       </v-row>
     </v-parallax>
-    <v-container fill-width py-12 mb-5>
-        <v-card class="mx-auto mb-12">
+     <v-tabs
+    fixed-tabs
+    background-color="#fafafa"
+    color="warning"
+>
+        <v-tab to="dance">
+        コンテスト
+        </v-tab>
+        <v-tab to="cheer">
+        チアダンスショー
+        </v-tab>
+    </v-tabs>
+    <v-container fill-width py-12>
+          <v-card class="mx-auto">
             <v-img
               class="white--text align-end"
               height="270px"
-              src="../assets/img/tmp.jpg"
+              src="../assets/img/dance2.jpg"
               alt="ダンサー達"
             >
             </v-img>
@@ -37,9 +49,10 @@
                 <div align="center">
                   <h4 class="title">★ナンバーワンはどのチームだ！！</h4>
                   <p class="subtitle-1">
-                      小学生の部（土曜日）と中学生（日曜日）に分かれて１チームごとに踊り審査員がその中から順位を決める<br>
+                      小学生の部（土曜日）と中学生の部（日曜日）に分かれて審査します。<br>
                       入賞チームはイベント最後に発表。その際に、クリスタルトロフィー・副賞を渡す。
                   </p>
+                  <p class="headline blue--text">エントリー無料!!<br>(定員になり次第締切)</p>
                 </div>
                 <v-simple-table class="mb-8">
                     <template v-slot:default>
@@ -56,7 +69,7 @@
                     <tbody>
                         <tr v-for="item in results" :key="item.name">
                         <td width="30%" class="font-weight-bold">{{ item.title }}</td>
-                        <td width="70%">{{ item.text }}</td>
+                        <td width="70%" style="white-space:pre-wrap; word-wrap:break-word;">{{ item.text }}</td>
                         </tr>
                     </tbody>
                     </template>
@@ -99,21 +112,6 @@
             </div>
           </v-card-text>
         </v-card>
-        <v-card id="card-color" class="mx-auto">
-            <v-img
-              class="white--text align-end"
-              height="270px"
-              src="../assets/img/cheer.jpg"
-              alt="チアダンス"
-            >
-            </v-img>
-            <v-card-text class="py-10">
-            <Title :title="'チアダンスショー参加者募集！'"></Title>
-              <div align="center">
-                <v-btn to="/form/participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
-              </div>
-            </v-card-text>
-        </v-card>
     </v-container>
 </div>
 </template> 
@@ -134,7 +132,9 @@ import Title from '../components/Title.vue';
         details: [
           {
             title: '日時',
-            text: '未定 土・日開催 || 土曜日 小学生の部 ・ 日曜日 中学生の部 || 10:00受付開始 11:00スタート 16:00 終了'
+            text: `未定 土・日開催
+土曜日 小学生の部 ・ 日曜日 中学生の部
+10:00受付開始 11:00スタート 16:00 終了`
           },
           {
             title: 'エントリー費',
@@ -145,8 +145,8 @@ import Title from '../components/Title.vue';
             text: '小学1年生〜中学3年生'
           },
           {
-            title: 'チーム数',
-            text: '各30チーム'
+            title: '音源時間',
+            text: '4分以内'
           },
           {
             title: 'ジャンル',
@@ -160,19 +160,19 @@ import Title from '../components/Title.vue';
         results: [
           {
             title: '優勝',
-            text: 'クリスタルトロフィー授与 | （副賞） 中学生の部 3万円相当商品券贈呈　（副賞） 小学生の部 2万円相当商品券贈呈'
+            text: 'クリスタルトロフィー・豪華商品贈呈'
           },
           {
             title: '準優勝',
-            text: 'クリスタルトロフィー授与 | （副賞） 小学生・中学生の部 1万円相当商品券贈呈　（副賞） 小学生の部 2万円相当商品券贈呈'
+            text: 'クリスタルトロフィー・豪華商品贈呈'
           },
           {
             title: '3位',
-            text: 'クリスタルトロフィー授与 | （副賞） 小学生・中学生の部 5千円相当商品券贈呈'
+            text: 'クリスタルトロフィー授与'
           },
           {
             title: '特別賞',
-            text: 'クリスタルトロフィー授与 | （副賞） 小学生・中学生の部 3千円相当商品券贈呈'
+            text: 'クリスタルトロフィー授与'
           },
         ],
       }

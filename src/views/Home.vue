@@ -12,10 +12,10 @@
         height="auto"
         class="pb-10"
         id="top-img"
-        src="@/assets/img/bg4.jpg"
+        src="@/assets/img/bg2.jpg"
       >
         <v-card-title class="text-center justify-center pt-7 pb-12">
-          <h1 class="font-weight-black headline">わくわくフェスティバルは<br>子供から大人まで愛犬と一緒に楽しめるイベントです！</h1>
+          <h1 class="font-weight-black headline">わくわくフェスティバルは<br>愛犬はもちろんお子様と一緒にご家族で楽しめるイベントです！</h1>
         </v-card-title>
         <v-container fluid>
         <v-tabs
@@ -44,7 +44,10 @@
                   <li>10：00〜17：00</li>
                   <li class="py-3 font-weight-bold">会場</li>
                   <li><a href="https://www.aichiskyexpo.com/access/" target="_blank">Aichi Sky Expo 展示ホールA</a></li>
-                  <li>愛知県国際展示場<br>愛知県常滑市セントレア5丁目10番地1号</li>              
+                  <li>
+                    愛知県国際展示場<br>愛知県常滑市セントレア5丁目10番地1号<br>
+                    (名鉄中部国際空港駅より徒歩5分)
+                  </li>              
                 </ul>
               </v-card-text>
             </v-card>
@@ -53,16 +56,13 @@
             <v-card>
               <v-card-text>
                 <ul class="pa-0 text-center subtitle-1">
-                <li class="py-3 font-weight-bold">前売り券<br>（コンビニ各店にて販売中）</li>
-                <li>大人:1,300円</li>
-                <li>子供（小学生以下）:700円</li>
-                <li>学生:1,000円</li>
                 <li class="py-3 font-weight-bold">当日券</li>
-                <li>大人:1,600円</li>
-                <li>子供（小学生以下）:900円</li>
-                <li class="mb-3">学生:1,300円</li>
-                <li>※学生の方は、ご入場の際に学生証の提示をお願いする場合があります。</li>
-                <li>※入場料 2歳以下無料</li>
+                <li>大人（高校生以上）:1,600円</li>
+                <li class="mb-3">子供:900円</li>
+                <li class="py-3 font-weight-bold">前売り券<br>（コンビニ各店にて2020年2月より販売開始）</li>
+                <li>大人:1,400円</li>
+                <li class="mb-3">子供:700円</li>
+                <li>※入場料 3歳未満無料</li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -125,7 +125,7 @@ export default {
       bannars: [
         {id: 1,name: 'わんわんカーニバル',to: '/carnival',color: "#F48FB1"},
         {id: 2,name: 'わくフェスキッズダンスコンテスト&チアダンスショー',to: '/dance',color: '#00ACC1'},
-        {id: 3,name: '子供の楽園',to: '/park',color: '#5C6BC0'},
+        {id: 3,name: '子供の楽園/各種催し',to: '/park',color: '#5C6BC0'},
       ]
     }
   },

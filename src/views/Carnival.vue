@@ -3,7 +3,7 @@
       <v-parallax
       dark
       height="320"
-      src="../assets/img/dog3.jpg"
+      src="../assets/img/dog.jpg"
     >
       <v-row
         align="center"
@@ -43,24 +43,27 @@
         >
             <v-card-title class="title">{{ item.title }}</v-card-title>
             <v-card-text class="white pt-4 text--primary">
-            <p>{{ item.text }}</p>
+            <p style="white-space:pre-wrap; word-wrap:break-word;">{{ item.text }}</p>
+            <p style="white-space:pre-wrap; word-wrap:break-word;" v-if="item.text2">{{ item.text2 }}</p>            
+            <p style="white-space:pre-wrap; word-wrap:break-word;" v-if="item.text3">{{ item.text3 }}</p>            
             </v-card-text>
         </v-card>
         </v-timeline-item>
     </v-timeline>
-    <v-divider></v-divider>
+    <v-divider class="mb-4"></v-divider>
+    <p class="text-center">出展者・出場者の皆様</p>
     <ul>
         <v-card-text tag="li">
-            <p class="mb-0">ペットカットしてくれるトリマーさん大募集！！</p>
-            <v-btn class="ma-2" outlined color="primary" to="/carnival/form/trim">募集要項・応募希望</v-btn>
-        </v-card-text>
-                <v-card-text tag="li">
             <p class="mb-0">ペットグッズ出展者大募集！！</p>
             <v-btn class="ma-2" outlined color="primary" to="/carnival/form/store">募集要項・出展希望</v-btn>
         </v-card-text>
         <v-card-text tag="li">
-            <p class="mb-0">同時にフリーマーケットも開催！！出展者大募集！！</p>
+            <p class="mb-0">フリーマーケット出品者大募集！！</p>
             <v-btn class="ma-2" outlined color="primary" to="/carnival/form/freemarket">募集要項・出展希望</v-btn>
+        </v-card-text>
+        <v-card-text tag="li">
+            <p class="mb-0">ペットカット選手権出場トリマーさん大募集！！</p>
+            <v-btn class="ma-2" outlined color="primary" to="/carnival/form/trim">募集要項・応募希望</v-btn>
         </v-card-text>
     </ul>
   </v-card>
@@ -80,20 +83,31 @@ import Title from '../components/Title.vue';
       text: 'Wakuwaku Festival',
       items: [
         { 
-          title: 'ペットカットスタイリングショー',
-          text: '好みのスタイルを見つけてね！',
+          title: 'ペットカット選手権',
+          text:  `好みのスタイルを見つけて下さい！
+特別賞（若干名）`,
+          text2: `「審査員2人」
+高い技術力・スキルを感じ、可愛く仕上げた方を選出致します。`,
           color: 'red lighten-2',
+          text3: `「一般審査」
+ご来場のお客様にお願い致します。
+純粋にお客様の好みのカットに一票を投じていただきます`,
           icon: 'fas fa-cut',
         },
         {
-          title: '愛犬ファッションショー',
-          text: 'かわいいファッションを自慢しよう!!',
+          title: '愛犬交流広場',
+          text: `・プロの訓練士によるワンポイントアドバイス！
+・愛犬のお手入れ簡単アドバイス！
+・プロトリマー向けアレンジスタイルレッスン！`,
           color: 'purple darken-1',
           icon: 'fas fa-tshirt',
         },
         {
-          title: 'かけっこ選手権',
-          text: 'うちの子がナンバーワン！！',
+          title: '各種催し',
+          text: `・うちの子がナンバーワン！！ワンワン競争
+・フォト
+・じゃんけん大会
+・他、催し時間開催`,
           color: 'green lighten-1',
           icon: 'fas fa-running',
         },

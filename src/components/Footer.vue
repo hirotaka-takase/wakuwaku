@@ -57,7 +57,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong> (C)株式会社スタイルクリエーション</strong>
+        Copyright © {{ new Date().getFullYear() }} - <strong>STYLE CREATION INC.</strong>
       </v-card-text>
     </v-card>
   </v-footer>
