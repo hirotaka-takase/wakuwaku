@@ -54,12 +54,12 @@
     <p class="text-center">出展者・出場者の皆様</p>
     <ul>
         <v-card-text tag="li">
-            <p class="mb-0">ペットグッズ出展者大募集！！</p>
+            <p class="mb-0">ペットグッズ出展者申込！！</p>
             <v-btn class="ma-2" outlined color="primary" to="/carnival/form/store">募集要項・出展希望</v-btn>
         </v-card-text>
         <v-card-text tag="li">
             <p class="mb-0">フリーマーケット出品者大募集！！</p>
-            <v-btn class="ma-2" outlined color="primary" to="/carnival/form/freemarket">募集要項・出展希望</v-btn>
+            <v-btn class="ma-2" outlined color="primary" to="/carnival/form/freemarket">募集要項・出品希望</v-btn>
         </v-card-text>
         <v-card-text tag="li">
             <p class="mb-0">ペットカット選手権出場トリマーさん大募集！！</p>
@@ -74,7 +74,10 @@
 <script>
 import Title from '../components/Title.vue';
 
-  export default {
+export default {
+	mounted: function(){
+	document.title = "わんわんカーニバル";
+  },
     name: 'pets',
     components: {
      Title,

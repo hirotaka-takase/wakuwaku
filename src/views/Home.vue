@@ -56,12 +56,12 @@
             <v-card>
               <v-card-text>
                 <ul class="pa-0 text-center subtitle-1">
-                <li class="py-3 font-weight-bold">当日券</li>
-                <li>大人（高校生以上）:1,600円</li>
-                <li class="mb-3">子供:900円</li>
-                <li class="py-3 font-weight-bold">前売り券<br>（コンビニ各店にて2020年2月より販売開始）</li>
+                <li class="py-2 font-weight-bold">前売り券<br>（コンビニ各店にて2020年2月より販売開始）</li>
                 <li>大人:1,400円</li>
                 <li class="mb-3">子供:700円</li>
+                <li class="py-2 font-weight-bold">当日券</li>
+                <li>大人（高校生以上）:1,600円</li>
+                <li class="mb-3">子供:900円</li>
                 <li>※入場料 3歳未満無料</li>
                 </ul>
               </v-card-text>
@@ -92,9 +92,10 @@
             >
               <v-scroll-y-transition>
                 <v-card-title
-                  class="pa-2 font-weight-thin"
+                  class="pa-2 font-weight-bold"
                   id="banner-text"
                   :style="{color: bannar.color}"
+                  style="white-space:pre-wrap; word-wrap:break-word;"
                 >
                   {{ bannar.name }}
                 </v-card-title>
@@ -123,9 +124,25 @@ export default {
          '日時・場所', '料金',
       ],
       bannars: [
-        {id: 1,name: 'わんわんカーニバル',to: '/carnival',color: "#F48FB1"},
-        {id: 2,name: 'わくフェスキッズダンスコンテスト&チアダンスショー',to: '/dance',color: '#00ACC1'},
-        {id: 3,name: '子供の楽園/各種催し',to: '/park',color: '#5C6BC0'},
+        {
+          id: 1,
+          name: `わんわん
+カーニバル`,
+          to: '/carnival',color: "#F48FB1"
+        },
+        {
+          id: 2,name: 
+          `わくフェスキッズダンスコンテスト
+&チアダンスショー`,
+          to: '/dance',
+          color: '#00ACC1'
+        },
+        {
+          id: 3,name: `子供の楽園
+/各種催し`,
+          to: '/park',
+          color: '#5C6BC0'
+        },
       ]
     }
   },
@@ -145,10 +162,11 @@ ul {
   list-style-type: none;
 }
 #banner-text {
-  font-size: 2.1rem!important;
+  font-size: 2.8rem!important;
   font-weight: bold;
+  line-height: 1.6;
 }
-@media (max-width: 480px) {
+@media (max-width: 750px) {
 #fv {
    max-height: 250px;
 }
@@ -159,7 +177,7 @@ div.display-2 {
   font-size: 1.7rem!important;
 }
 #banner-text {
-  font-size: 1.7rem!important;
+  font-size: 1.9rem!important;
 }
 }
 </style>

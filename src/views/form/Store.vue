@@ -11,7 +11,7 @@
 <script>
 export default {
 	mounted: function(){
-	document.title = "コンテストエントリー";
+	document.title = "ペットグッズ出展者申込";
   },
 }
 </script>

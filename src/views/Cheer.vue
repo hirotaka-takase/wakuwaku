@@ -97,7 +97,7 @@ import Title from '../components/Title.vue';
       Title
     },
     mounted: function(){
-      document.title = "ダンスコンテスト＆ショー";
+      document.title = "チアダンスショー";
     },
     data () {
       return {

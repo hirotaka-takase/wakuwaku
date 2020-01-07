@@ -12,7 +12,7 @@
 
 export default {
 	mounted: function(){
-	document.title = "コンテストエントリー";
+	document.title = "ペットカットトリマーエントリー";
   },
 }
 </script>

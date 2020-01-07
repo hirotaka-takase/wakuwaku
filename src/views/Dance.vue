@@ -88,10 +88,6 @@
                       メンバー全員が中学3年生以下
                     </li>
                     <li>
-                      中学生部門<br>
-                      メンバー全員が中学3年生以下
-                    </li>
-                    <li>
                       メンバー人数制限は2人以上です
                     </li>
                     <li>
@@ -124,7 +120,7 @@ import Title from '../components/Title.vue';
       Title
     },
     mounted: function(){
-      document.title = "ダンスコンテスト＆ショー";
+      document.title = "わくフェスキッズダンスコンテスト";
     },
     data () {
       return {
@@ -132,7 +128,7 @@ import Title from '../components/Title.vue';
         details: [
           {
             title: '日時',
-            text: `未定 土・日開催
+            text: `4月25日 4月26日
 土曜日 小学生の部 ・ 日曜日 中学生の部
 10:00受付開始 11:00スタート 16:00 終了`
           },
@@ -181,7 +177,7 @@ import Title from '../components/Title.vue';
 </script>
 
 <style scoped>
-@media (max-width: 480px) {
+@media (max-width: 750px) {
 table tr td {
    width: 100%;
    display: block!important;
