@@ -11,11 +11,6 @@ const routes = [
     component: Home
   },
   {
-    path: '/philosophy',
-    name: 'philosophy',
-    component: () => import('../views/Philosophy.vue')
-  },
-  {
     path: '/form/participants_dance',
     name: 'participants_dance',
     component: () => import('../views/form/Participants_dance.vue')
@@ -41,17 +36,17 @@ const routes = [
     component: () => import('../views/Carnival.vue')
   },
   {
-    path: '/carnival/form/trim',
+    path: '/form/trim',
     name: 'trim',
     component: () => import('../views/form/Trim.vue')
   },
   {
-    path: '/carnival/form/store',
+    path: '/form/store',
     name: 'store',
     component: () => import('../views/form/Store.vue')
   },
   {
-    path: '/carnival/form/freemarket',
+    path: '/form/freemarket',
     name: 'freemarket',
     component: () => import('../views/form/Freemarket.vue')
   },
@@ -61,9 +56,9 @@ const routes = [
     component: () => import('../views/Dance.vue')
   },
   {
-    path: '/cheer',
-    name: 'cheer',
-    component: () => import('../views/Cheer.vue')
+    path: '/idol',
+    name: 'idol',
+    component: () => import('../views/Idol.vue')
   },
   {
     path: '/park',

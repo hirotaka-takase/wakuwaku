@@ -31,8 +31,8 @@
         <v-tab to="dance">
         コンテスト
         </v-tab>
-        <v-tab to="cheer">
-        チアダンスショー
+        <v-tab to="idol">
+        ご当地アイドルでショー
         </v-tab>
     </v-tabs>
     <v-container fill-width py-12>
@@ -47,10 +47,10 @@
             <v-card-text>
                 <Title :title="'わくフェスキッズダンスコンテスト'"></Title>
                 <div align="center">
-                  <h4 class="title">★ナンバーワンはどのチームだ！！</h4>
+                  <h4 class="title">ナンバーワンはどのチームだ！！</h4>
                   <p class="subtitle-1">
-                      小学生の部（土曜日）と中学生の部（日曜日）に分かれて審査します。<br>
-                      入賞チームはイベント最後に発表。その際に、クリスタルトロフィー・副賞を渡す。
+                      小学生の部（土曜日）と中学生の部（日曜日）に分かれて１チーム毎にダンスを踊り、審査は審査員が行います。<br>
+                      入賞チームはイベント最後に発表。その際に、クリスタルトロフィー・副賞を贈呈致します。
                   </p>
                   <p class="headline blue--text">エントリー無料!!<br>(定員になり次第締切)</p>
                 </div>
@@ -128,9 +128,9 @@ import Title from '../components/Title.vue';
         details: [
           {
             title: '日時',
-            text: `4月25日 4月26日
+            text: `4月25日(土) 4月26日(日)
 土曜日 小学生の部 ・ 日曜日 中学生の部
-10:00受付開始 11:00スタート 16:00 終了`
+10:30受付開始 11:30スタート 16:00 終了`
           },
           {
             title: 'エントリー費',
@@ -146,7 +146,7 @@ import Title from '../components/Title.vue';
           },
           {
             title: 'ジャンル',
-            text: 'ジャンル規定なし'
+            text: 'ジャンル規定はありません'
           },
           {
             title: 'MC&ジャッジ',

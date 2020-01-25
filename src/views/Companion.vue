@@ -8,7 +8,7 @@
                         {{ rule.text }}
                     </li>            
                 </ul>
-                <p class="font-weight-bold">※主催者のルールに従っていただけない場合はご退場させていただくことがあります。</p>
+                <p class="font-weight-bold">※主催者が同伴の愛犬に対して体調不良と認めた場合、又は主催者のルールに従っていただけない場合はご退場いただくことがあります。あらかじめご了承ください。</p>
             </v-card-text>
         </v-card>
     </v-container>

@@ -7,7 +7,7 @@
       fixed
     >
       <v-toolbar-title>
-          <router-link class="title" tag="h1" to="/" text--white>わくわくフェスティバル</router-link> 
+          <h1><router-link class="title" tag="h1" to="/" text--white>わくわくフェスティバル</router-link></h1>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-menu
@@ -42,12 +42,6 @@ export default {
     data () {
       return {
         headers: [
-          {
-            title: 'わくフェス理念',
-            to: '/philosophy',
-            icon: 'fas fa-medal',
-            color: 'red'
-          },
           {
             title: `コンテスト＆
                 チアダンスショー`,

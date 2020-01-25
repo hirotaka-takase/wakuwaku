@@ -31,8 +31,8 @@
         <v-tab width="50%" to="dance">
         コンテスト
         </v-tab>
-        <v-tab width="50%" to="cheer">
-        チアダンスショー
+        <v-tab width="50%" to="idol">
+        ご当地アイドルでショー
         </v-tab>
     </v-tabs>
     <v-container fill-width py-12>
@@ -45,7 +45,7 @@
             >
             </v-img>
             <v-card-text class="py-10">
-            <Title :title="'チアダンスショー参加者募集！'"></Title>
+            <Title :title="'ご当地アイドルでショー'"></Title><!--
                 <div align="center">
                   <p class="subtitle-1">
                       年齢、性別関係なく応募で集まったメンバーによるチアダンスショー
@@ -82,7 +82,7 @@
                 </ul>
               <div align="center">
                 <v-btn to="/form/participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
-              </div>
+              </div>-->
             </v-card-text>
         </v-card>
     </v-container>
@@ -97,7 +97,7 @@ import Title from '../components/Title.vue';
       Title
     },
     mounted: function(){
-      document.title = "チアダンスショー";
+      document.title = "ご当地アイドルでショー";
     },
     data () {
       return {
