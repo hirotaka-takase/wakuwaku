@@ -1,6 +1,6 @@
 <template>
     <div id="top-title" align="center" >
-        <h3 class="headline d-inline-block text--primary mb-7">{{ title }}</h3>
+        <h3 class="wf-roundedmplus1c d-inline-block mb-7">{{ title }}</h3>
     </div>
 </template>
 
@@ -21,5 +21,6 @@ export default {
     border-bottom: #ffa72d 3px solid;
     font-size: 1.8rem !important;
     padding-bottom: 3px;
+    color: #696969;
 }
 </style>

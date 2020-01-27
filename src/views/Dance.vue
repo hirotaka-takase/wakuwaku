@@ -47,12 +47,12 @@
             <v-card-text>
                 <Title :title="'わくフェスキッズダンスコンテスト'"></Title>
                 <div align="center">
-                  <h4 class="title">ナンバーワンはどのチームだ！！</h4>
+                  <h4 class="title">ナンバーワンはどのチームだ！</h4>
                   <p class="subtitle-1">
-                      小学生の部（土曜日）と中学生の部（日曜日）に分かれて１チーム毎にダンスを踊り、審査は審査員が行います。<br>
-                      入賞チームはイベント最後に発表。その際に、クリスタルトロフィー・副賞を贈呈致します。
+                      小学生の部と中学生の部に分かれて1チームごとダンスを踊り、審査は審査員が行います。<br>
+                      入賞チームにはイベント最後に発表。その際に、クリスタルトロフィー・副賞を贈呈致します。
                   </p>
-                  <p class="headline blue--text">エントリー無料!!<br>(定員になり次第締切)</p>
+                  <p class="headline blue--text">エントリー無料！！<br>（定員になり次第締切）</p>
                 </div>
                 <v-simple-table class="mb-8">
                     <template v-slot:default>
@@ -128,9 +128,9 @@ import Title from '../components/Title.vue';
         details: [
           {
             title: '日時',
-            text: `4月25日(土) 4月26日(日)
-土曜日 小学生の部 ・ 日曜日 中学生の部
-10:30受付開始 11:30スタート 16:00 終了`
+            text: `2020年4月25日（土）小学生の部
+2020年4月26日（日）中学生の部
+9:30受付開始 10：30スタート 16：00終了`
           },
           {
             title: 'エントリー費',
@@ -138,7 +138,7 @@ import Title from '../components/Title.vue';
           },
           {
             title: '対象年齢',
-            text: '小学1年生〜中学3年生'
+            text: '小学1年生から中学3年生'
           },
           {
             title: '音源時間',
@@ -146,21 +146,24 @@ import Title from '../components/Title.vue';
           },
           {
             title: 'ジャンル',
-            text: 'ジャンル規定はありません'
+            text: 'ジャンル規定なし'
           },
           {
-            title: 'MC&ジャッジ',
-            text: 'MCヒロ | bigsky bigsky bigsky'
+            title: '審査員',
+            text: ''
+          },          {
+            title: 'MC',
+            text: ''
           },
         ],
         results: [
           {
             title: '優勝',
-            text: 'クリスタルトロフィー・豪華商品贈呈'
+            text: 'クリスタルトロフィー・豪華賞品贈呈'
           },
           {
             title: '準優勝',
-            text: 'クリスタルトロフィー・豪華商品贈呈'
+            text: 'クリスタルトロフィー・豪華賞品贈呈'
           },
           {
             title: '3位',

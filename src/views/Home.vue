@@ -14,7 +14,7 @@
         src="@/assets/img/bg2.jpg"
       >
         <v-card-title class="text-center justify-center pt-7 pb-12">
-          <h3 class="font-weight-black headline">わくわくフェスティバルは<br>愛犬はもちろんお子様と一緒にご家族で楽しめるイベントです！</h3>
+          <h2 class="wf-roundedmplus1c">わくわくフェスティバルは愛犬はもちろんお子様と一緒にご家族で楽しめるイベントです！</h2>
         </v-card-title>
         <v-container fluid>
         <v-tabs
@@ -39,18 +39,18 @@
               <v-card-text>
                 <ul class="pa-0 subtitle-1 text-center">
                   <li class="py-3 font-weight-bold">日時</li>
-                  <li>4月25日(土) 4月26日(日)</li>
-                  <li>10：00〜17：00</li>
-                  <li class="py-3 font-weight-bold">会場</li>
-                  <li><a href="https://www.aichiskyexpo.com/access/" target="_blank">Aichi Sky Expo 展示ホールA</a></li>
+                  <li>4月25日（土）4月26日（日）</li>
+                  <li>10：00～17：00</li>
+                  <li class="py-3 font-weight-bold">会場<br>（10,000人収容）</li>
+                  <li><a href="https://www.aichiskyexpo.com/access/" target="_blank">AICHI SKY EXPO 展示ホールA</a></li>
                   <li class="mb-4">
-                    愛知県国際展示場<br>愛知県常滑市セントレア5丁目10番地1号<br>
-                    (名鉄中部国際空港駅より徒歩5分)<br>
+                    愛知国際会議展示場<br>愛知県常滑セントレア5丁目10番地1号<br>
+                    （名鉄中部国際空港駅より徒歩5分）<br>
                   </li>  
                   <li>
-                    (お車でお越しの方)<br>
-                    セントレア東ICを降りて直進役2km<br>
-                    大駐車場有(有料最大800円)
+                   〔お車でお越しのお客様〕<br>
+                    セントレア東ICを降りて直進約2Kｍ<br>
+                    大駐車場有（24時間最大800円）
                   </li>            
                 </ul>
               </v-card-text>
@@ -60,14 +60,14 @@
             <v-card>
               <v-card-text>
                 <ul class="pa-0 text-center subtitle-1">
-                <li class="py-2 font-weight-bold">前売り券<br>（コンビニ各店にて2020年2月初月より販売開始）</li>
-                <li>大人（高校生以上）:1,400円</li>
-                <li class="mb-3">子供（中学生以下）:700円</li>
+                <li class="py-2 font-weight-bold">前売り券<br>（ローソン、セブンイレブン、ファミリーマート各コンビニにて2020年2月15日（土）より販売開始）</li>
+                <li>大人（高校生以上）：1,400円</li>
+                <li class="mb-3">子子供（中学生以下）：700円</li>
                 <li class="py-2 font-weight-bold">当日券</li>
-                <li>大人（高校生以上）:1,600円</li>
-                <li class="mb-3">子供（中学生以下）:900円</li>
-                <li>※入場料 3歳未満無料</li>
-                <li>※ご入場の際、お子様には縁日、キッズパークで使えるお楽しみ券を贈呈致します。</li>
+                <li>大人（高校生以上）：1,600円</li>
+                <li class="mb-3">子供（中学生以下）：900円</li>
+                <li>※3歳未満無料</li>
+                <li>※ご入場の際、お子様には縁日、キッズパークで使えるお楽しみ券を１枚贈呈します。</li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -148,7 +148,7 @@
                        <li>・巨大迷路</li>
                        <li>・キッズスペース（幼児対象）</li>
                      </ul>   
-                      <div class="balloon1-top ">
+                      <div class="balloon1-top">
                           <p>遊び場<br>満載！</p>
                       </div>                                      
                      <p>※一部有料のコンテンツあります</p>
@@ -190,17 +190,17 @@
               style="position: relative;"
               to="/dance"
             >
-            <p id="banner-posision">
+            <p id="banner-posision" class="wf-nicomoji" style="opacity: 0.9;">
               わくフェス
             </p>
               <v-scroll-y-transition>
                 <v-card-title
                   id="banner-text"
-                style="color: #444444;"
+                   class="wf-roundedmplus1c"
                 >
                 <div>
-                  <p>キッズダンスコンテスト<br><span>「子供と言ってあなどるな！」</span></p>
-                  <p>ご当地アイドルでショー<br><span>「どんな感じ？こんな感じ！」</span></p>    
+                  <p style="color: #6495ED">キッズダンスコンテスト<br><small>「子供と言ってあなどるな！」</small></p>
+                  <p style="color: #FA8072">ご当地アイドルでショー<br><small>「どんな感じ？こんな感じ！」</small></p>    
                 </div>              
                 </v-card-title>
               </v-scroll-y-transition>
@@ -209,22 +209,22 @@
         </v-col>
       </v-row>
   </v-item-group>
-  <div class="top-btn text-center mb-5 d-flex justify-space-around">
-    <div>
-      <p>ペットグッズ出展社大募集！</p>
-      <v-btn x-large class="ma-2" tile outlined color="success" to="/form/store">
-        出展社情報
+  <div class="top-btn text-center d-flex justify-space-around">
+    <div class="mb-5">
+      <p class="mb-0">ペットグッズ出展者大募集！</p>
+      <v-btn x-large class="ma-2" tile outlined color="warning" to="/form/store">
+        出展者情報
       </v-btn>    
     </div>
-    <div>
-      <p>ペットカット選手権出場者大募集！</p>
+    <div class="mb-5">
+      <p class="mb-0">ペットカット選手権出場者大募集！</p>
       <v-btn x-large class="ma-2" tile outlined color="success" to="/form/trim">
         出場者情報
       </v-btn>    
     </div>
-    <div>
-      <p>フリーマーケット出店者大募集！</p>
-      <v-btn x-large class="ma-2" tile outlined color="success" to="/form/freemarket">
+    <div class="mb-5">
+      <p class="mb-0">フリーマーケット出店者大募集！</p>
+      <v-btn x-large class="ma-2" tile outlined color="indigo" to="/form/freemarket">
         出店者情報
       </v-btn>
     </div>
@@ -293,20 +293,20 @@ ul {
   list-style-type: none;
 }
 #banner-text p {
-  font-size: 2.6rem!important;
+  font-size: 3rem!important;
   font-weight: bold;
   line-height: 1.1;
 }
-#banner-text span {
-  font-size: 1.3rem!important;
+#banner-text small {
+  font-size: 1.5rem!important;
   font-weight: lighter;
 }
 #banner-posision {
 position: absolute;
 background: #fff;
-left: 30px;
+left: 0;
 top: -25px;
-font-size: 30px;
+font-size: 35px;
 border: 2px solid #ffa72d;
 color:  #444444;
 padding: 10px; 
@@ -327,18 +327,18 @@ div.display-2 {
   flex-direction: column;
 }
 #banner-text p {
-  font-size: 1.5rem!important;
+  font-size: 1.4rem!important;
   font-weight: bold;
   line-height: 1.1;
 }
-#banner-text span {
-  font-size: 0.9rem!important;
+#banner-text small {
+  font-size: 1rem!important;
   font-weight: lighter;
 }
 #banner-posision {
-left: 10px;
+left: 0;
 top: -25px;
-font-size: 18px;
+font-size: 25px;
 border: 1px solid #ffa72d;
 }
 

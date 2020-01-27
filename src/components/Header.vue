@@ -7,7 +7,7 @@
       fixed
     >
       <v-toolbar-title>
-          <h1><router-link class="title" tag="h1" to="/" text--white>わくわくフェスティバル</router-link></h1>
+        <router-link class="wf-nikukyu pb-2" tag="h1" to="/" text--white>わくわくフェスティバル</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-menu
@@ -27,7 +27,7 @@
             @click="() => {}"
           >
             <v-list-item-title>
-              <router-link style="white-space:pre-wrap; word-wrap:break-word;" tag="nav" :to="header.to"><v-icon class="pr-3" :color="header.color">{{ header.icon }}</v-icon>{{ header.title }}</router-link>
+              <router-link class="wf-roundedmplus1c" style="white-space:pre-wrap; word-wrap:break-word;" tag="nav" :to="header.to"><v-icon class="pr-3" :color="header.color">{{ header.icon }}</v-icon>{{ header.title }}</router-link>
             </v-list-item-title>
           </v-list-item>
         </v-list>
@@ -44,7 +44,7 @@ export default {
         headers: [
           {
             title: `コンテスト＆
-                チアダンスショー`,
+                アイドルでショー`,
             to: '/form/participants_dance',
             icon: 'fas fa-child',
             color: 'green'
@@ -70,5 +70,11 @@ export default {
 <style>
 h1 {
   cursor: pointer;
+  font-size: 25px;
+}
+@media (max-width: 750px) {
+h1 {
+  font-size: 22px;
+}
 }
 </style>
