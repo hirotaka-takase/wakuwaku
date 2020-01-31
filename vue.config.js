@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/wakuwakufes.com/',
+  publicPath: './',
   outputDir: 'docs',
   "transpileDependencies": [
     "vuetify"
