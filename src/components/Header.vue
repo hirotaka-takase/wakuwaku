@@ -7,7 +7,7 @@
       fixed
     >
       <v-toolbar-title>
-        <router-link class="wf-nikukyu pb-2" tag="h1" to="/" text--white>わくわくフェスティバル</router-link>
+        <router-link class="wf-nicomoji" tag="h1" to="/" text--white>わくわくフェスティバル</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-menu
@@ -70,11 +70,11 @@ export default {
 <style>
 h1 {
   cursor: pointer;
-  font-size: 25px;
+  font-size: 30px;
 }
 @media (max-width: 750px) {
 h1 {
-  font-size: 22px;
+  font-size: 26px;
 }
 }
 </style>
