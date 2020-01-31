@@ -37,15 +37,16 @@
     </v-tabs>
     <v-container fill-width py-12>
         <v-card id="card-color" class="mx-auto">
-            <v-img
+            <!--<v-img
               class="white--text align-end"
               height="270px"
               src="../assets/img/cheer2.jpg"
               alt="チアダンス"
             >
-            </v-img>
+            </v-img>-->
             <v-card-text class="py-10">
-            <Title :title="'ご当地アイドルでショー'"></Title><!--
+            <Title :title="'ご当地アイドルでショー'"></Title>
+            <p class="text-center headline">coming soon</p><!--
                 <div align="center">
                   <p class="subtitle-1">
                       年齢、性別関係なく応募で集まったメンバーによるチアダンスショー

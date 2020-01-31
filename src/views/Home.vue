@@ -17,42 +17,38 @@
           <div class="wf-roundedmplus1c d-flex justify-center" style="font-weight: bold;">
             <div>
               <h2 class="desc-title">愛犬家大集合!</h2>
-              <v-list-item fives-line>
-                <v-list-item-content>
-                  <v-list-item-title class="mb-3 desc-item-title">交流広場</v-list-item-title>
-                  <v-list-item-subtitle class="desc-item">
+              <p class="mb-3 top-desc-title">交流広場</p>
+              <ul>
+                  <li>
                     ・ペットカット選手権 
-                  </v-list-item-subtitle>
-                  <v-list-item-subtitle class="desc-item">
+                  </li>
+                  <li>
                     ・わん芸 IT'sショータイム!
-                  </v-list-item-subtitle>
-                  <v-list-item-subtitle class="desc-item">
+                  </li>
+                  <li>
                     ・うちの子自慢トークショー
-                  </v-list-item-subtitle>
-                  <v-list-item-subtitle class="desc-item">
+                  </li>
+                  <li>
                     ・全員参加でじゃんけんポン! 
-                  </v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
+                  </li>
+              </ul>
             </div>
             <div>
-            <p class="desc-title2">お子様から大人までご家族で<br>楽しめるイベントです! </p>
-              <v-list-item four-line class="text-center">
-                <v-list-item-content>
-                  <p class="mb-3 desc-item-title">たくさんのワンちゃんも見れますよ! </p>
-                  <v-list-item-subtitle class="desc-item">
-                    ・縁日・キッズパーク
-                  </v-list-item-subtitle>
-                  <v-list-item-subtitle class="desc-item">
-                    ・キッズダンスコンテスト 
-                  </v-list-item-subtitle>
-                  <v-list-item-subtitle class="desc-item">
-                    ・ご当地アイドルでショー 
-                  </v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
+              <p class="desc-title2">お子様から大人までご家族で楽しめるイベントです! </p>
+              <p class="mb-3 top-desc-title">たくさんのワンちゃんも見れますよ!</p>
+                <ul>
+                    <li>
+                      ・縁日・キッズパーク
+                    </li>
+                    <li>
+                      ・キッズダンスコンテスト 
+                    </li>
+                    <li>
+                      ・ご当地アイドルでショー 
+                    </li>
+                </ul>
+              </div>
             </div>
-          </div>
         </v-container>
   </v-parallax>
     <v-card color="mb-3">
@@ -89,10 +85,12 @@
                   <li>10：00～17：00</li>
                   <li class="py-3 font-weight-bold">会場<br>（10,000人収容）</li>
                   <li><a href="https://www.aichiskyexpo.com/access/" target="_blank">AICHI SKY EXPO 展示ホールA</a></li>
-                  <li class="mb-4">
-                    愛知国際会議展示場<br>愛知県常滑セントレア5丁目10番地1号<br>
-                    （名鉄中部国際空港駅より徒歩5分）<br>
-                  </li>  
+                  <li>
+                    愛知県常滑セントレア5丁目10番地1号
+                  </li>
+                  <li class="mb-3">
+                    （名鉄中部国際空港駅より徒歩5分）
+                  </li>
                   <li>
                    〔お車でお越しのお客様〕<br>
                     セントレア東ICを降りて直進約2Kｍ<br>
@@ -311,26 +309,25 @@ export default {
 #top-img1,#top-img2 {
   object-fit: cover;
 }
-.top-desc {
-  width: 1100px;
-}
 .desc-title {
- font-size: 61px;
+ font-size: 60px;
  color: #FF0000;
 }
 .desc-title2 {
   border: 2px solid #fff;
   border-radius: 50%;
   text-align: center;
-  padding: 30px 20px;
+  padding: 25px 30px;
   font-size: 28px;
+  width: 450px;
 }
-.desc-item-title {
+.top-desc-title {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.6);
 }
-.desc-item {
-  font-size: 25px;
+.top-desc ul li {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
 }
 .card_title {
   font-family: 'Kosugi Maru', sans-serif;
@@ -412,13 +409,14 @@ transform: rotate(-25deg);
  font-size: 38px;
 }
 .desc-title2 {
-  padding: 30px 20px;
   font-size: 18px;
+  padding: 25px 15px;
+  width: 280px;
 }
-.desc-item-title {
+.top-desc-title {
   font-size: 20px;
 }
-.desc-item {
+.top-desc ul li {
   font-size: 18px;
 }
 .top-desc .d-flex {
@@ -464,12 +462,12 @@ div.display-2 {
   top: -35px;
 }
 #banner-text p {
-  font-size: 1.4rem!important;
+  font-size: 1.8rem!important;
   font-weight: bold;
   line-height: 1.1;
 }
 #banner-text small {
-  font-size: 1rem!important;
+  font-size: 1.2rem!important;
   font-weight: lighter;
 }
 #banner-posision {
