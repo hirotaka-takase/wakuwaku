@@ -16,7 +16,7 @@
         <v-container class="top-desc">
           <div class="wf-roundedmplus1c d-flex justify-center" style="font-weight: bold;">
             <div>
-              <p class="desc-title">愛犬家大集合!</p>
+              <h2 class="desc-title">愛犬家大集合!</h2>
               <v-list-item fives-line>
                 <v-list-item-content>
                   <v-list-item-title class="mb-3 desc-item-title">交流広場</v-list-item-title>
@@ -62,9 +62,6 @@
         id="top-img2"
         src="@/assets/img/bg2.jpg"
           >
-        <v-card-title class="text-center justify-center pt-7 pb-12">
-          <h2 class="wf-roundedmplus1c">わくわくフェスティバルは愛犬はもちろんお子様と一緒にご家族で楽しめるイベントです！</h2>
-        </v-card-title>
         <v-container fluid>
         <v-tabs
           v-model="tab"
