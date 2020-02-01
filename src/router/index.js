@@ -11,14 +11,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/form/participants_dance',
+    path: '/participants_dance',
     name: 'participants_dance',
     component: () => import('../views/form/Participants_dance.vue')
   },
   {
-    path: '/form/participants_cheer',
+    path: '/participants_cheer',
     name: 'participants_cheer',
-    component: () => import('../views//form/Participants_cheer.vue')
+    component: () => import('../views/form/Participants_cheer.vue')
   },
   {
     path: '/companion',

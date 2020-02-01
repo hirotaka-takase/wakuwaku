@@ -45,7 +45,7 @@ export default {
           {
             title: `コンテスト＆
                 アイドルでショー`,
-            to: '/form/participants_dance',
+            to: '/participants_dance',
             icon: 'fas fa-child',
             color: 'green'
           },

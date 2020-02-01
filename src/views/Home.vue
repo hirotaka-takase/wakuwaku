@@ -324,10 +324,12 @@ export default {
 .top-desc-title {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
 .top-desc ul li {
   color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
+  color: #fff;
 }
 .card_title {
   font-family: 'Kosugi Maru', sans-serif;
@@ -462,7 +464,7 @@ div.display-2 {
   top: -35px;
 }
 #banner-text p {
-  font-size: 1.8rem!important;
+  font-size: 1.7rem!important;
   font-weight: bold;
   line-height: 1.1;
 }
@@ -472,8 +474,8 @@ div.display-2 {
 }
 #banner-posision {
 left: 0;
-top: -15px;
-font-size: 25px;
+top: -20px;
+font-size: 22px;
 border: 1px solid #ffa72d;
 }
 
