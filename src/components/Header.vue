@@ -57,7 +57,7 @@ export default {
           },
           {
             title: 'お問い合わせ',
-            to: '/form/contact',
+            to: '/contact',
             icon: 'far fa-envelope',
             color: 'purple'
           },

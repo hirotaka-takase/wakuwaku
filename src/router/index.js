@@ -26,7 +26,7 @@ const routes = [
     component: () => import('../views/Companion.vue')
   },
   {
-    path: '/form/contact',
+    path: '/contact',
     name: 'contact',
     component: () => import('../views/form/Contact.vue')
   },
