@@ -27,7 +27,7 @@
             @click="() => {}"
           >
             <v-list-item-title>
-              <router-link class="wf-roundedmplus1c" style="white-space:pre-wrap; word-wrap:break-word;" tag="nav" :to="header.to"><v-icon class="pr-3" :color="header.color">{{ header.icon }}</v-icon>{{ header.title }}</router-link>
+              <router-link style="white-space:pre-wrap; word-wrap:break-word;" tag="nav" :to="header.to"><v-icon class="pr-3" :color="header.color">{{ header.icon }}</v-icon>{{ header.title }}</router-link>
             </v-list-item-title>
           </v-list-item>
         </v-list>
