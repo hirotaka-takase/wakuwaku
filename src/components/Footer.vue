@@ -76,7 +76,7 @@ export default {
                 {id: 3, name: '前売券コンビニで発売中!', to: "https://eplus.jp/sf/detail/3188790001-P0030001"},
                 {id: 4, name: 'Facebook', to: "https://www.facebook.com/wakuwaku.fs"},
                 {id: 5, name: 'Instagram', to: "http://instagram.com/wakuwakufestival"},
-                {id: 6, name: 'Twetter', to: "https://Twitter.com/waku.fes"}
+                {id: 6, name: 'Twetter', to: "https://twitter.com/waku_fes"}
        ]
     }
   }
