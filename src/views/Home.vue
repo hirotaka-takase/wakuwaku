@@ -135,13 +135,13 @@
           <p>「わん芸 IT's ショータイム」芸達者なワンちゃんが登場します。</p>
           <p>「うちの子自慢 トークショー」こんなことあんなこと何でもアリアリ!<br>自慢して下さい! </p>
         <v-row no-gutters>
-          <template v-for="n in koryu">
-          <v-col :key="n.id">
-            <p>{{ n.title }}</p>
-          </v-col>
+          <template v-for="item in koryu">
+            <v-col :key="item.id">
+              <li>{{ item.title }}</li>
+            </v-col>
           <v-responsive
-            v-if="n.id === 2"
-            :key="`width-${n.id}`"
+            v-if="item.id === 2"
+            :key="`width-${item.id}`"
             width="100%"
           ></v-responsive>
           </template>
@@ -295,10 +295,22 @@ export default {
          '日時・場所', '料金',
       ],
       koryu: [
-        {id: 1,title: '◉ 愛犬お手入簡単アドバイス'},
-        {id: 2,title: '◉ プロトリマー向けアレンジレッスン'},
-        {id: 3,title: '◉ プロの訓練士によるワンポイントアドバイス'},
-        {id: 4,title: '◉ セラピードックで癒し効果'}
+        {
+          id: 1,
+          title: '愛犬お手入簡単アドバイス'
+        },
+        {
+          id: 2,
+          title: 'プロトリマー向けアレンジレッスン'
+        },
+        {
+          id: 3,
+          title: 'プロの訓練士によるワンポイントアドバイス'
+        },
+        {
+          id: 4,
+          title: 'セラピードックで癒し効果'
+        }
       ]
     }
   },
