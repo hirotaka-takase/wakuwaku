@@ -134,18 +134,12 @@
           <p>「ペットカット選手権」ライブ形式。好みのスタイル見つけて下さい。</p>
           <p>「わん芸 IT's ショータイム」芸達者なワンちゃんが登場します。</p>
           <p>「うちの子自慢 トークショー」こんなことあんなこと何でもアリアリ!<br>自慢して下さい! </p>
-        <v-row no-gutters>
-          <template v-for="item in koryu">
-            <v-col :key="item.id">
-              <li>{{ item.title }}</li>
-            </v-col>
-          <v-responsive
-            v-if="item.id === 2"
-            :key="`width-${item.id}`"
-            width="100%"
-          ></v-responsive>
-          </template>
-        </v-row>
+          <ul>
+            <li>◉ 愛犬お手入簡単アドバイス</li>
+            <li>◉ プロトリマー向けアレンジレッスン</li>
+            <li>◉ プロの訓練士によるワンポイントアドバイス</li>
+            <li>◉ セラピードックで癒し効果</li>
+          </ul>
       </v-card-text>
     </v-card>
     <v-card
@@ -294,24 +288,6 @@ export default {
       items: [
          '日時・場所', '料金',
       ],
-      koryu: [
-        {
-          id: 1,
-          title: '愛犬お手入簡単アドバイス'
-        },
-        {
-          id: 2,
-          title: 'プロトリマー向けアレンジレッスン'
-        },
-        {
-          id: 3,
-          title: 'プロの訓練士によるワンポイントアドバイス'
-        },
-        {
-          id: 4,
-          title: 'セラピードックで癒し効果'
-        }
-      ]
     }
   },
 }
