@@ -20,19 +20,44 @@
           </v-btn>
         </template>
 
-        <v-list>
-          <v-list-item
-            v-for="header in headers"
-            :key="header.title"
-            @click="() => {}"
+        <template>
+          <v-card
+            class="mx-auto"
+            height="280"
+            width="500"
           >
-            <v-list-item-title>
-              <router-link class="wf-roundedmplus1c" style="white-space:pre-wrap; word-wrap:break-word;" tag="nav" :to="header.to">
-                <v-icon class="pr-3" :color="header.color">{{ header.icon }}</v-icon>{{ header.title }}
-              </router-link>
-            </v-list-item-title>
+            <v-navigation-drawer
+              absolute
+              dark
+              src="@/assets/img/bg3.jpg"
+              width="100%"
+              permanent
+            >
+              <v-list>
+                <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title class="font-weight-bold">わくわくフェスティバル</v-list-item-title>
+            </v-list-item-content>
           </v-list-item>
-        </v-list>
+
+          <v-divider></v-divider>
+          <v-divider></v-divider>
+                <v-list-item
+                  v-for="([link, text], i) in items"
+                  :key="i"
+                  link
+                >
+                    <router-link :to="link" style="color: #fff; text-decoration: none; font-weight: bold; cursor: pointer;">{{ text }}</router-link>
+                </v-list-item>
+              </v-list>
+              <template v-slot:append>
+                <div class="pa-2">
+                  <v-btn block to="/">HOME</v-btn>
+                </div>
+              </template>
+            </v-navigation-drawer>
+          </v-card>
+        </template>
       </v-menu>
     </v-app-bar>
   </div>
@@ -43,26 +68,10 @@ export default {
   name: "Header",
     data () {
       return {
-        headers: [
-          {
-            title: `コンテスト＆
-                アイドルでショー`,
-            to: '/participants_dance',
-            icon: 'fas fa-child',
-            color: 'green'
-          },
-          {
-            title: '愛犬家のみなさまへ',
-            to: '/companion',
-            icon: 'fas fa-dog',
-            color: 'blue'
-          },
-          {
-            title: 'お問い合わせ',
-            to: '/contact',
-            icon: 'far fa-envelope',
-            color: 'purple'
-          },
+        items: [
+        ['/participants_dance', 'コンテスト＆アイドルでショー'],
+        ['/companion', '愛犬家のみなさまへ'],
+        ['/contact', 'お問い合わせ'],
         ],
       }
     },

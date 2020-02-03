@@ -106,7 +106,7 @@
                 <ul class="pa-0 text-center subtitle-1">
                 <li class="py-2 font-weight-bold">前売り券<br>（ローソン、セブンイレブン、ファミリーマート各コンビニにて2020年2月15日（土）より販売開始）</li>
                 <li>大人（高校生以上）：1,400円</li>
-                <li class="mb-3">子子供（中学生以下）：700円</li>
+                <li class="mb-3">子供（中学生以下）：700円</li>
                 <li class="py-2 font-weight-bold">当日券</li>
                 <li>大人（高校生以上）：1,600円</li>
                 <li class="mb-3">子供（中学生以下）：900円</li>
