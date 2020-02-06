@@ -16,9 +16,9 @@ const routes = [
     component: () => import('../views/form/Participants_dance.vue')
   },
   {
-    path: '/participants_cheer',
-    name: 'participants_cheer',
-    component: () => import('../views/form/Participants_cheer.vue')
+    path: '/participants_idol',
+    name: 'participants_idol',
+    component: () => import('../views/form/Participants_idol.vue')
   },
   {
     path: '/companion',
@@ -29,11 +29,6 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: () => import('../views/form/Contact.vue')
-  },
-  {
-    path: '/carnival',
-    name: 'carnival',
-    component: () => import('../views/Carnival.vue')
   },
   {
     path: '/form/trim',
@@ -59,11 +54,6 @@ const routes = [
     path: '/idol',
     name: 'idol',
     component: () => import('../views/Idol.vue')
-  },
-  {
-    path: '/park',
-    name: 'park',
-    component: () => import('../views/Park.vue')
   },
   {
     path: '/outline',

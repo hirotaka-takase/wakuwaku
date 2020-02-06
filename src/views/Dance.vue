@@ -4,6 +4,7 @@
       dark
       height="300"
       src="../assets/img/dance1.jpg"
+      alt="コンテストイメージ"
     >
       <v-row
         align="center"
@@ -41,7 +42,7 @@
               class="white--text align-end"
               height="270px"
               src="../assets/img/dance2.jpg"
-              alt="ダンサー達"
+              alt="ダンスコンテスト"
             >
             </v-img>
             <v-card-text>

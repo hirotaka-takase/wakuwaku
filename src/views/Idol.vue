@@ -3,7 +3,8 @@
       <v-parallax
       dark
       height="300"
-      src="../assets/img/cheer1.jpg"
+      src="../assets/img/idol1.jpg"
+      alt="ショーイメージ"
     >
       <v-row
         align="center"

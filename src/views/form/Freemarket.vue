@@ -9,7 +9,7 @@
 
 export default {
 	mounted: function(){
-	document.title = "フリーマーケット出品者エントリー";
+	document.title = "フリーマーケット出店者エントリー";
   },
 }
 </script>

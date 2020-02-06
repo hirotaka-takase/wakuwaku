@@ -4,6 +4,7 @@
         src="@/assets/img/fv.jpg"
         height="650"
         width="100%"
+        alt="わくわくフェスティバル"
     >
     </v-img>
     <v-parallax
@@ -11,6 +12,7 @@
     dark
     id="top-img1"
     src="@/assets/img/top-dog.jpg"
+    alt="ワンチャン"
     >
 
         <v-container class="top-desc">
@@ -57,6 +59,7 @@
         class="pb-10"
         id="top-img2"
         src="@/assets/img/bg2.jpg"
+        alt="壁の背景"
           >
         <v-container fluid>
         <v-tabs
