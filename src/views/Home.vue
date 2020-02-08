@@ -19,6 +19,7 @@
           <div class="wf-roundedmplus1c d-flex justify-center" style="font-weight: bold;">
             <div>
               <h2 class="desc-title">愛犬家大集合!</h2>
+              <p class="mb-1 top-desc-title" style="color: #00008B;">東海ペットイベント!</p>
               <p class="mb-3 top-desc-title">交流広場</p>
               <ul>
                   <li>
