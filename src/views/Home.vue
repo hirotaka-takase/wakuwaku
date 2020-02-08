@@ -395,6 +395,9 @@ transform: rotate(-25deg);
 #fv {
    max-height: 250px;
 }
+#top-img1 {
+  height: 600px!important;
+}
 .top-desc {
   text-align: center;
   width: 100%;
