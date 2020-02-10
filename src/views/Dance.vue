@@ -33,7 +33,7 @@
         コンテスト
         </v-tab>
         <v-tab to="idol">
-        ご当地アイドルでショー
+        ご当地アイドル男女でショー
         </v-tab>
     </v-tabs>
     <v-container fill-width py-12>
@@ -50,7 +50,7 @@
                 <div align="center">
                   <h4 class="title">ナンバーワンはどのチームだ！</h4>
                   <p class="subtitle-1">
-                      小学生の部と中学生の部に分かれて1チームごとダンスを踊り、審査は審査員が行います。<br>
+                      小学生の部と中学生の部に分かれてチームごとにダンスを踊り、審査は審査員が行います。<br>
                       入賞チームにはイベント最後に発表。その際に、クリスタルトロフィー・副賞を贈呈致します。
                   </p>
                   <p class="headline blue--text">エントリー無料！！<br>（定員になり次第締切）</p>
@@ -151,27 +151,19 @@ import Title from '../components/Title.vue';
           },
           {
             title: '審査員',
-            text: ''
+            text: 'coming soon..'
           },          {
             title: 'MC',
-            text: ''
+            text: 'coming soon..'
           },
         ],
         results: [
           {
-            title: '優勝',
+            title: 'グランプリ/準グランプリ',
             text: 'クリスタルトロフィー・豪華賞品贈呈'
           },
           {
-            title: '準優勝',
-            text: 'クリスタルトロフィー・豪華賞品贈呈'
-          },
-          {
-            title: '3位',
-            text: 'クリスタルトロフィー授与'
-          },
-          {
-            title: '特別賞',
+            title: '3位/特別賞',
             text: 'クリスタルトロフィー授与'
           },
         ],

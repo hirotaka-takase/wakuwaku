@@ -38,7 +38,7 @@
             </div>
             <div>
               <p class="desc-title2">お子様から大人までご家族で楽しめるイベントです! </p>
-              <p class="mb-3 top-desc-title">たくさんのワンちゃんも見れますよ!</p>
+              <p class="mb-3 top-desc-title">たくさんのワンちゃんも見られますよ!</p>
                 <ul>
                     <li>
                       ・縁日・キッズパーク
@@ -47,7 +47,7 @@
                       ・キッズダンスコンテスト 
                     </li>
                     <li>
-                      ・ご当地アイドルでショー 
+                      ・ご当地アイドル男女でショー 
                     </li>
                 </ul>
               </div>
@@ -88,9 +88,9 @@
                   <li>4月25日（土）4月26日（日）</li>
                   <li>10：00～17：00</li>
                   <li class="py-3 font-weight-bold">会場<br>（10,000人収容）</li>
-                  <li><a href="https://www.aichiskyexpo.com/access/" target="_blank">AICHI SKY EXPO 展示ホールA</a></li>
+                  <li><a href="https://www.aichiskyexpo.com/access/" target="_blank">AICHI SKY EXPO 屋内ホールA</a></li>
                   <li>
-                    愛知県常滑セントレア5丁目10番地1号
+                    愛知県常滑市セントレア5丁目10番地1号
                   </li>
                   <li class="mb-3">
                     （名鉄中部国際空港駅より徒歩5分）
@@ -115,7 +115,7 @@
                 <li>大人（高校生以上）：1,600円</li>
                 <li class="mb-3">子供（中学生以下）：900円</li>
                 <li>※3歳未満無料</li>
-                <li>※ご入場の際、お子様には縁日、キッズパークで使えるお楽しみ券を１枚贈呈します。</li>
+                <li>※ご入場の際、お子様には縁日、キッズパークで使えるお楽しみ券を１枚進呈します。</li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -134,7 +134,7 @@
        交流広場
       </p>
       <v-card-text class="white--text card-text">
-          <p>「オフ会しよう!」オフ会には最適広場! </p>
+          <p>「オフ会しよう!」オフ会には最適広場! <br>事前にお申入いただければスペース確保いたします。(無料）</p>
           <p>「ペットカット選手権」ライブ形式。好みのスタイル見つけて下さい。</p>
           <p>「わん芸 IT's ショータイム」芸達者なワンちゃんが登場します。</p>
           <p>「うちの子自慢 トークショー」こんなことあんなこと何でもアリアリ!<br>自慢して下さい! </p>
@@ -174,8 +174,8 @@
           <p style="width: 20%;">縁日</p>
           <ul>
             <li>・射的</li>
-            <li>・わなげ</li>
-            <li>・すいか割り</li>
+            <li>・輪投げ</li>
+            <li>・スイカ割り</li>
             <li>・ラッキーボール</li>
             <li>・カラス倒しゲーム </li>
           </ul>
@@ -190,7 +190,7 @@
         <div class="arrow d-flex mb-6" style="position: relative;">
           <p style="width: 20%;">キッズパーク</p>
           <ul>
-            <li>・ふわふわトランポリン</li>
+            <li>・フワフワトランポリン</li>
             <li>・ボールプール</li>
             <li>・巨大迷路</li>
             <li>・キッズスペース(幼児対象)</li>
@@ -231,7 +231,7 @@
               :color="active ? 'primary' : ''"
               align="right"
               class="d-flex align-center justify-center"
-              height="260"
+              height="430"
               @click="toggle"
               id="bannar"
               style="position: relative;"
@@ -243,11 +243,12 @@
               <v-scroll-y-transition>
                 <v-card-title
                   id="banner-text"
-                   class="wf-nicomoji"
+                  class="wf-nicomoji"
                 >
-                <div>
+                <div class="text-center">
                   <p style="color: #6495ED">キッズダンスコンテスト<br><small>「<span class="wf-roundedmplus1c">子供</span>と<span class="wf-roundedmplus1c">言</span>ってあなどらないで！」</small></p>
-                  <p style="color: #FA8072">ご<span class="wf-roundedmplus1c">当地</span>アイドルでショー<br><small>「どんなかんじ？こんなかんじ！」</small></p>    
+                  <p><span class="wf-roundedmplus1c">東京</span>から<span class="wf-roundedmplus1c">急遽出演決定</span>！<br><span class="wf-roundedmplus1c">男性</span>ボーカルユニットBLACK IRIS<br>オリコンチャート1位、ウィークリーチャート1位</p>
+                  <p style="color: #FA8072">ご<span class="wf-roundedmplus1c">当地</span>アイドル男女でショー<br><small>「どんなかんじ？こんなかんじ！」</small></p>    
                 </div>              
                 </v-card-title>
               </v-scroll-y-transition>
@@ -259,20 +260,17 @@
   <div class="top-btn text-center d-flex justify-space-around">
     <div class="mb-5 mx-1">
       <v-btn height="100" x-large class="btns" tile outlined color="warning" to="/form/store">
-        ペットグッズ出展者大募集！<br>
-        出展者情報
+        出展情報！
       </v-btn>    
     </div>
     <div class="mb-5 mx-1">
       <v-btn height="100" x-large class="btns" tile outlined color="success" to="/form/trim">
-        ペットカット選手権出場者大募集！<br>
-        出場者情報
+        ペットカット選手権出場者募集!
       </v-btn>    
     </div>
     <div class="mb-5 mx-1">
       <v-btn height="100" x-large class="btns" tile outlined color="indigo" to="/form/freemarket">
-        フリーマーケット出店者大募集！<br>
-        出店者情報
+        フリーマーケット出店募集！
       </v-btn>
     </div>
   </div>
@@ -368,7 +366,7 @@ ul {
   list-style-type: none;
 }
 #banner-text p {
-  font-size: 3rem!important;
+  font-size: 2.8rem!important;
   font-weight: bold;
   line-height: 1.1;
 }
@@ -468,9 +466,9 @@ div.display-2 {
   font-weight: lighter;
 }
 #banner-posision {
-left: 0;
-top: -20px;
-font-size: 22px;
+left: -10px;
+top: -22px;
+font-size: 21px;
 border: 1px solid #ffa72d;
 }
 

@@ -30,7 +30,7 @@ export default {
       return {
         tab: null,
         items: [
-          {title: 'コンテスト・アイドルでショー', to: '/participants_dance'},
+          {title: 'コンテスト・アイドル男女でショー', to: '/participants_dance'},
           {title: '愛犬家のみなさまへ', to: '/companion'},
           {title: 'お問い合わせ', to: '/contact'},
         ],
