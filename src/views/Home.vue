@@ -219,7 +219,7 @@
         <p>・フランクフルト・サンドウィッチ / ・ウーロン茶・コーラ等</p>
       </v-card-text>
     </v-card>
-    <p class="px-5" style="color: #444444;">※シルバー優先席あります。ごゆっくりおくつろきください</p>
+    <p class="px-5 silver-text" style="color: #444444;">※シルバー優先席あります。ごゆっくりおくつろきください</p>
     <v-item-group>
       <v-row>
         <v-col
@@ -456,6 +456,9 @@ div.display-2 {
 .arrow_box_add p:before {
   top: -35px;
 }
+.silver-text {
+  padding-bottom: 20px;
+}
 #banner-text p {
   font-size: 1.7rem!important;
   font-weight: bold;
@@ -467,7 +470,7 @@ div.display-2 {
 }
 #banner-posision {
 left: -10px;
-top: -22px;
+top: -30px;
 font-size: 21px;
 border: 1px solid #ffa72d;
 }
