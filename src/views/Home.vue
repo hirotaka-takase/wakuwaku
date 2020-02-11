@@ -219,7 +219,7 @@
         <p>・フランクフルト・サンドウィッチ / ・ウーロン茶・コーラ等</p>
       </v-card-text>
     </v-card>
-    <p class="px-5 silver-text" style="color: #444444;">※シルバー優先席あります。ごゆっくりおくつろきください</p>
+    <p class="px-5 silver-text" style="color: #444444;">※シルバー優先席あります。ごゆっくりおくつろぎください</p>
     <v-item-group>
       <v-row>
         <v-col
