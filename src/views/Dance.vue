@@ -29,11 +29,11 @@
     background-color="#fafafa"
     color="warning"
 >
-        <v-tab to="dance">
+        <v-tab width="50%" to="dance">
         コンテスト
         </v-tab>
-        <v-tab to="idol">
-        ご当地アイドル男女でショー
+        <v-tab width="50%" to="idol">
+        ご当地アイドルでショー
         </v-tab>
     </v-tabs>
     <v-container fill-width py-12>
