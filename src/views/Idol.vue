@@ -99,7 +99,10 @@ import Title from '../components/Title.vue';
       Title
     },
     mounted: function(){
-      document.title = "ご当地アイドルでショー";
+      document.title = "ご当地アイドル男女でショー";
+      document.querySelector("meta[property='og:title']").setAttribute('content', "わくフェスキッズダンスコンテスト");
+      document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020のご当地アイドル男女でショー情報です。皆んなで力を合わせて最高のショーを作ろう!!");
+      document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020のご当地アイドル男女でショー情報です。皆んなで力を合わせて最高のショーを作ろう!!");
     },
     data () {
       return {

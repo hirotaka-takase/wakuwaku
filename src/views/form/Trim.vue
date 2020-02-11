@@ -9,7 +9,10 @@
 
 export default {
 	mounted: function(){
-	document.title = "ペットカットトリマーエントリー";
+      document.title = "ペットカットトリマーエントリー";
+      document.querySelector("meta[property='og:title']").setAttribute('content', "ペットカットトリマーエントリー");
+      document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020ではペットカットトリマーを募集しています。犬に優しいトリミング・アレンジスタイルについてワンポイントアドバイスもあります。");
+      document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020ではペットカットトリマーを募集しています。犬に優しいトリミング・アレンジスタイルについてワンポイントアドバイスもあります。");
   },
 }
 </script>

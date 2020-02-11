@@ -9,7 +9,10 @@
 
 export default {
 	mounted: function(){
-	document.title = "フリーマーケット出店者エントリー";
+      document.title = "フリーマーケット出店者エントリー";
+      document.querySelector("meta[property='og:title']").setAttribute('content', "フリーマーケット出店者エントリー");
+      document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020ではフリーマーケット出店者を募集しています。目標動員数16,000人にもなるイベントで、自分のアイテムを販売してみませんか？");
+      document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020ではフリーマーケット出店者を募集しています。目標動員数16,000人にもなるイベントで、自分のアイテムを販売してみませんか？");
   },
 }
 </script>

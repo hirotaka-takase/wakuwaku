@@ -282,7 +282,10 @@
 export default {
   name: 'home',
 	mounted: function(){
-	document.title = "わくわくフェスティバル";
+      document.title = "わくわくフェスティバル";
+      document.querySelector("meta[property='og:title']").setAttribute('content', "わくわくフェスティバル");
+      document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020では子供から大人まで愛犬と一緒に楽しめるイベントです！わんちゃんたちと最高の思い出を作りましょう！皆様のご参加お待ちしております。");
+      document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020では子供から大人まで愛犬と一緒に楽しめるイベントです！わんちゃんたちと最高の思い出を作りましょう！皆様のご参加お待ちしております。");
   },
   data() {
     return {
@@ -470,7 +473,7 @@ div.display-2 {
 }
 #banner-posision {
 left: -10px;
-top: -33px;
+top: -34px;
 font-size: 21px;
 border: 1px solid #ffa72d;
 }

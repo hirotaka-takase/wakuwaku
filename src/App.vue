@@ -12,14 +12,10 @@ import Footer from './components/Footer';
 
 export default {
   name: 'App',
-
   components: {
     Header,
     Footer
   },
-  data: () => ({
-    //
-  }),
 };
 
 </script>

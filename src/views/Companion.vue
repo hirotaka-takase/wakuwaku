@@ -22,8 +22,11 @@ export default {
     components: {
     Title
   },
-	mounted: function(){
-	document.title = "ペット同伴について";
+  mounted: function(){
+    document.title = "ペット同伴について";
+    document.querySelector("meta[property='og:title']").setAttribute('content', "ペット同伴について");
+    document.querySelector("meta[name='description']").setAttribute('content', "わんちゃんと同伴する際はルールを守って、名古屋のわくわくフェステバルで楽しく遊ぼう!!");
+    document.querySelector("meta[property='og:description']").setAttribute('content', "わんちゃんと同伴する際はルールを守って、名古屋のわくわくフェステバルで楽しく遊ぼう!!");
   },
   data() {
     return {

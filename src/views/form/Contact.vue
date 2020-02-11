@@ -10,7 +10,10 @@
 
   export default {
 	mounted: function(){
-	document.title = "お問い合わせ";
+    document.title = "お問い合わせ";
+    document.querySelector("meta[property='og:title']").setAttribute('content', "名古屋で行われる、地域限定わくわくフェスティバル2020についてのお問い合わせ");
+    document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる、地域限定わくわくフェスティバル2020について、わんちゃん、ダンス、会場、イベントのことなどなど、お問い合わせください。");
+    document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる、地域限定わくわくフェスティバル2020について、わんちゃん、ダンス、会場、イベントのことなどなど、お問い合わせください。");
   },
 }
 </script>

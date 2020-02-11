@@ -27,6 +27,9 @@ export default {
   },
 	mounted: function(){
     document.title = "会社概要";
+    document.querySelector("meta[property='og:title']").setAttribute('content', "会社概要");
+    document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる、地域限定わくわくフェスティバル2020を運営している株式会社style creationの会社概要です。");
+    document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる、地域限定わくわくフェスティバル2020を運営している株式会社style creationの会社概要です。");
   },
     data () {
       return {

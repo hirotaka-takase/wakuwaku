@@ -8,7 +8,10 @@
 <script>
 export default {
 	mounted: function(){
-	document.title = "ペットグッズ出展者申込";
+      document.title = "ペットグッズ出展者申込";
+      document.querySelector("meta[property='og:title']").setAttribute('content', "ペットグッズ出展者申込");
+      document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020ではペットグッズ出展者を募集しています。ペット、アウトドア関連グッズを販売する方、ご来場者様に販売・広告宣伝効果を見込める方大募集です。");
+      document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020ではペットグッズ出展者を募集しています。ペット、アウトドア関連グッズを販売する方、ご来場者様に販売・広告宣伝効果を見込める方大募集です。");
   },
 }
 </script>

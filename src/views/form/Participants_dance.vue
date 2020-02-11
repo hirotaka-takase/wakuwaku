@@ -13,7 +13,10 @@ export default {
     components: {
   },
 	mounted: function(){
-	document.title = "コンテストエントリー";
+    document.title = "キッズダンスコンテストエントリー";
+    document.querySelector("meta[property='og:title']").setAttribute('content', "キッズダンスコンテスト");
+    document.querySelector("meta[name='description']").setAttribute('content', "わくわくフェスティバルはわんちゃんと遊ぶだけじゃない！キッズダンスコンテストもあるよ！皆んなで力を合わせて賞を勝ち取ろう!");
+    document.querySelector("meta[property='og:description']").setAttribute('content', "わくわくフェスティバルはわんちゃんと遊ぶだけじゃない！キッズダンスコンテストもあるよ！皆んなで力を合わせて賞を勝ち取ろう!");
   },
 }
 </script>
