@@ -231,7 +231,7 @@
               :color="active ? 'primary' : ''"
               align="right"
               class="d-flex align-center justify-center"
-              height="430"
+              height="450"
               @click="toggle"
               id="bannar"
               style="position: relative;"
@@ -247,7 +247,7 @@
                 >
                 <div class="text-center">
                   <p style="color: #6495ED">キッズダンスコンテスト<br><small>「<span class="wf-roundedmplus1c">子供</span>と<span class="wf-roundedmplus1c">言</span>ってあなどらないで！」</small></p>
-                  <p><span class="wf-roundedmplus1c">東京</span>から<span class="wf-roundedmplus1c">急遽出演決定</span>！<br><span class="wf-roundedmplus1c">男性</span>ボーカルユニットBLACK IRIS<br>オリコンチャート1位、ウィークリーチャート1位</p>
+                  <p><span class="wf-roundedmplus1c">東京</span>から<span class="wf-roundedmplus1c">急遽出演決定</span>！<br><span class="wf-roundedmplus1c">男性</span>ボーカルユニットBLACK IRIS<br>オリコンデイリーランキング1位<br>オリコンウィークリーランキング3位</p>
                   <p style="color: #FA8072">ご<span class="wf-roundedmplus1c">当地</span>アイドル男女でショー<br><small>「どんなかんじ？こんなかんじ！」</small></p>    
                 </div>              
                 </v-card-title>
@@ -460,7 +460,7 @@ div.display-2 {
   top: -35px;
 }
 .silver-text {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 #banner-text p {
   font-size: 1.7rem!important;
@@ -473,7 +473,7 @@ div.display-2 {
 }
 #banner-posision {
 left: -10px;
-top: -34px;
+top: -40px;
 font-size: 21px;
 border: 1px solid #ffa72d;
 }
