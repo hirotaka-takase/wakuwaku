@@ -56,6 +56,11 @@ const routes = [
     component: () => import('../views/Idol.vue')
   },
   {
+    path: '/ticket',
+    name: 'ticket',
+    component: () => import('../views/Ticket.vue')
+  },
+  {
     path: '/outline',
     name: 'outline',
     component: () => import('../views/Outline.vue')

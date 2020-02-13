@@ -20,6 +20,7 @@ module.exports = {
                               '/participants_idol',
                               '/companion',
                               '/contact',
+                              '/ticket',
                               '/form/store',
                               '/form/trim',
                               '/form/freemarket'
