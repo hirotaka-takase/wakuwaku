@@ -76,7 +76,7 @@ export default {
             sns: [
                 {id: 4, name: 'Facebook', to: "https://www.facebook.com/wakuwaku.fs"},
                 {id: 5, name: 'Instagram', to: "http://instagram.com/wakuwakufestival"},
-                {id: 6, name: 'Twetter', to: "https://twitter.com/waku_fes"}
+                {id: 6, name: 'Twitter', to: "https://twitter.com/waku_fes"}
        ]
     }
   }
