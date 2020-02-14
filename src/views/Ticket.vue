@@ -65,20 +65,7 @@
                             <span>・ローソン／ミニストップでの直接購入</span><br>
                             ローソン・ミニストップ店頭「Loppi（ロッピー）」から<br>
                             Lコード『43228』を入力ください。<br>
-                            ご利用ガイド：<a href="http://l-tike.com/guide/loppi.html" target="_blank">http://l-tike.com/guide/loppi.html</a>
-                        </v-card-subtitle>
-                        <v-card-subtitle>
-                            <span>・インターネットでの予約／購入</span><br>
-                            <a href="http://l-tike.com/" target="_blank">http://l-tike.com/</a><br>
-                            ※チケットの予約・購入には、会員登録が必要です。<br>
-                            （会員登録せずに購入する事もできますが、会員登録していただくことをお勧めします。）<br>
-                            ※ローソン／ミニストップでの店頭支払いもしくは予約時にクレジット決済をし、ローソン／ミニストップでの店頭受取をされる場合は手数料0円となります。<br>
-                            ※上記以外の場合、チケット料金のほかに手数料が必要となる場合があります（詳しくはお申込み時に表示される内容をご確認ください）。<br>   
-                            ご利用ガイド：<a href="https://l-tike.com/guide/pc.html" target="_blank">https://l-tike.com/guide/pc.html</a>                    
-                        </v-card-subtitle>
-                        <v-card-subtitle>
-                            <span>・電話（オペレーター）による予約</span><br>
-                            TEL番号：0570-000-777 Lコード：30102
+                            購入URL：<a href="https://l-tike.com/wakuwakufes/" target="_blank">https://l-tike.com/wakuwakufes/</a>
                         </v-card-subtitle>
                         <v-card-actions class="text-center">
                             <v-btn
