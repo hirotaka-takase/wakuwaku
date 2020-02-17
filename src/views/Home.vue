@@ -57,24 +57,25 @@
     <v-card color="mb-3">
       <v-parallax
         height="auto"
-        class="pb-10"
+        class="py-10"
         id="top-img2"
         src="@/assets/img/bg2.jpg"
         alt="壁の背景"
           >
-        <v-container fluid>
+        <v-container fill-width>
         <v-tabs
           v-model="tab"
-          background-color="transparent"
-          color="basil"
           grow
+          icons-and-text
+          color="deep-purple accent-4"
         >
           <v-tab
             v-for="item in items"
-            :key="item"
-            class="white--text title font-weight-black"
+            :key="item.title"
+            class="title font-weight-black"
           >
-            {{ item }}
+            {{ item.title }}
+            <i :class=item.icon></i>
           </v-tab>
         </v-tabs>
         </v-container>
@@ -247,8 +248,8 @@
                 >
                 <div class="text-center">
                   <p style="color: #6495ED">キッズダンスコンテスト<br><small>「<span class="wf-roundedmplus1c">子供</span>と<span class="wf-roundedmplus1c">言</span>ってあなどらないで！」</small></p>
-                  <p><span class="wf-roundedmplus1c">東京</span>から<span class="wf-roundedmplus1c">急遽出演決定</span>！<br><span class="wf-roundedmplus1c">男性</span>ボーカルユニットBLACK IRIS<br>オリコンデイリーランキング1位<br>オリコンウィークリーランキング3位</p>
                   <p style="color: #FA8072">ご<span class="wf-roundedmplus1c">当地</span>アイドル男女でショー<br><small>「どんなかんじ？こんなかんじ！」</small></p>    
+                  <p><span class="wf-roundedmplus1c">東京</span>から<span class="wf-roundedmplus1c">急遽出演決定</span>！<br><span class="wf-roundedmplus1c">男性</span>ボーカルユニットBLACK IRIS<br>オリコンデイリーランキング1位<br>オリコンウィークリーランキング3位</p>
                 </div>              
                 </v-card-title>
               </v-scroll-y-transition>
@@ -282,8 +283,8 @@
 export default {
   name: 'home',
 	mounted: function(){
-      document.title = "わくわくフェスティバル";
-      document.querySelector("meta[property='og:title']").setAttribute('content', "わくわくフェスティバル");
+      document.title = "わくわくフェスティバル2020";
+      document.querySelector("meta[property='og:title']").setAttribute('content', "わくわくフェスティバル2020");
       document.querySelector("meta[name='description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020では子供から大人まで愛犬と一緒に楽しめるイベントです！わんちゃんたちと最高の思い出を作りましょう！皆様のご参加お待ちしております。");
       document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋で行われる地域限定わくわくフェスティバル2020では子供から大人まで愛犬と一緒に楽しめるイベントです！わんちゃんたちと最高の思い出を作りましょう！皆様のご参加お待ちしております。");
   },
@@ -291,7 +292,8 @@ export default {
     return {
       tab: null,
       items: [
-         '日時・場所', '料金',
+        {title: '日時・場所',icon: "fas fa-clock"},
+        {title: '料金', icon: "fas fa-money-check-alt"}
       ],
     }
   },

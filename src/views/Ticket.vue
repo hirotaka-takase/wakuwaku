@@ -144,8 +144,8 @@ export default {
   mounted: function(){
     document.title = "チケット購入方法";
     document.querySelector("meta[property='og:title']").setAttribute('content', "チケット購入方法について");
-    document.querySelector("meta[name='description']").setAttribute('content', "名古屋のわくわくフェステバルのイベントチケット購入情報です。4月25・26日は名古屋に集合！ペットと楽しく遊ぼう！");
-    document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋のわくわくフェステバルのイベントチケット購入情報です。4月25・26日は名古屋に集合！ペットと楽しく遊ぼう！");
+    document.querySelector("meta[name='description']").setAttribute('content', "名古屋のわくわくフェステバル2020のイベントチケット購入情報です。4月25・26日は名古屋に集合！ペットと楽しく遊ぼう！");
+    document.querySelector("meta[property='og:description']").setAttribute('content', "名古屋のわくわくフェステバル2020のイベントチケット購入情報です。4月25・26日は名古屋に集合！ペットと楽しく遊ぼう！");
   },
   data: () => ({
     show: false,
