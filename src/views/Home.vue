@@ -8,7 +8,7 @@
     >
     </v-img>
     <v-parallax
-    height="540"
+    height="560"
     dark
     id="top-img1"
     src="@/assets/img/top-dog.jpg"
@@ -16,9 +16,9 @@
     >
 
         <v-container class="top-desc">
-          <div class="wf-roundedmplus1c d-flex justify-center" style="font-weight: bold;">
+          <div class="wf-roundedmplus1c d-flex justify-center mb-8" style="font-weight: bold;">
             <div>
-              <h2 class="desc-title">愛犬家大集合!</h2>
+              <p class="desc-title">愛犬家大集合!</p>
               <p class="mb-1 top-desc-title" style="color: #00008B;">東海ペットイベント!</p>
               <p class="mb-3 top-desc-title">交流広場</p>
               <ul>
@@ -52,6 +52,9 @@
                 </ul>
               </div>
             </div>
+            <h2 class="text-center">
+               <v-btn class="title" x-large height="100" color="primary" to="/about">2020わくわく<br>フェスティバル東海とは</v-btn>
+            </h2>
         </v-container>
   </v-parallax>
     <v-card color="mb-3">
@@ -305,8 +308,9 @@ export default {
   object-fit: cover;
 }
 .desc-title {
- font-size: 60px;
+ font-size: 55px;
  color: #FF0000;
+ margin-bottom: 0;
 }
 .desc-title2 {
   border: 2px solid #fff;
@@ -399,7 +403,7 @@ transform: rotate(-25deg);
    max-height: 250px;
 }
 #top-img1 {
-  height: 600px!important;
+  height: 720px!important;
 }
 .top-desc {
   text-align: center;
