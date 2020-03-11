@@ -75,6 +75,69 @@
                     </tbody>
                     </template>
                 </v-simple-table>
+                <div class="mb-9">
+                  <p align="center" class="title font-weight-bold">
+                      MC
+                  </p>
+                  <p align="center" class="title">
+                      4月25日(土)・4月26日(日)
+                  </p>
+                  <div class="ochobo">
+                    <span>おちょぼ(058funkstarz)</span>
+                    <v-img style="object-fit: cover;" height="320" src="../assets/img/ochobo.jpg"></v-img>
+                  </div>
+                </div>
+                <div class="mb-7">
+                  <p align="center" class="title font-weight-bold">
+                      審査員
+                  </p>
+                  <p align="center" class="title">
+                      4月25日(土)
+                  </p>
+                  <template>
+                    <v-item-group>
+                      <v-container>
+                        <v-row>
+                          <v-col
+                            v-for="judge in images_saturday"
+                            :key="judge.name"
+                            cols="12"
+                            class="col-image"
+                            md="4"
+                          >
+                            <span>{{ judge.name }}</span>
+                            <v-item>
+                              <v-img style="object-fit: cover;" height="350" :src="judge.img" alt="ジャッジ"></v-img>
+                            </v-item>
+                          </v-col>
+                        </v-row>
+                      </v-container>
+                    </v-item-group>
+                  </template>
+                  <p align="center" class="title">
+                      4月26日(日)
+                  </p>
+                  <template>
+                  <v-item-group>
+                    <v-container>
+                      <v-row>
+                        <v-col
+                          v-for="judge in images_sunday"
+                          :key="judge.name"
+                          cols="12"
+                          class="col-image"
+                          md="4"
+                        >
+                          <span>{{ judge.name }}</span>
+                          <v-item>
+                            <v-img style="object-fit: cover;" height="350" :src="judge.img" alt="ジャッジ"></v-img>
+                          </v-item>
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                  </v-item-group>
+                </template>
+                </div>
                 <p align="center" class="title font-weight-bold">
                     コンテストルール
                 </p>
@@ -152,13 +215,6 @@ import Title from '../components/Title.vue';
             title: 'ジャンル',
             text: 'ジャンル規定なし'
           },
-          {
-            title: '審査員',
-            text: 'coming soon..'
-          },          {
-            title: 'MC',
-            text: 'coming soon..'
-          },
         ],
         results: [
           {
@@ -170,12 +226,44 @@ import Title from '../components/Title.vue';
             text: 'クリスタルトロフィー授与'
           },
         ],
+        images_saturday: [
+          {
+            name: 'RYOTARO(OUT LEAP)',
+            img: require('@/assets/img/ryotaro.jpg')
+          },
+          {
+            name: 'mio(AYLAH/off-wite)',
+            img: require('@/assets/img/mio.jpg')
+          },
+          {
+            name: 'Youkey(DIZZLEZ/Half in Fun’k)',
+            img: require('@/assets/img/youkey.jpg')
+          }
+        ],
+        images_sunday: [
+          {
+            name: 'MOTOTAKA(BANZAI PRODUCTION/GOLD ACTOR)',
+            img: require('@/assets/img/mototaka.jpg')
+          },
+          {
+            name: 'HIDEYOSHI(LOKI/DIZZLEZ)',
+            img: require('@/assets/img/hideyoshi.jpg')
+          },
+          {
+            name: 'スーパーYUKA(Man&Woman/off-wite)',
+            img: require('@/assets/img/yuka.jpg')
+          }
+        ]
       }
     },
   }
 </script>
 
 <style scoped>
+.ochobo {
+  width: 350px;
+  margin: 0 auto;
+}
 @media (max-width: 750px) {
 table tr td {
    width: 100%;
@@ -184,6 +272,12 @@ table tr td {
    height: auto;
    padding: 10px 0;
    text-align: center;
+}
+.ochobo {
+  width: 100%;
+}
+.col-image {
+  padding: 0 0 10px 0;
 }
 }
 </style>
