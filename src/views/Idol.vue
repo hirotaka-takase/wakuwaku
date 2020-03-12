@@ -47,12 +47,12 @@
             </v-img>
             <v-card-text class="py-10">
             <Title :title="'ご当地アイドルでショー'"></Title>
-                <div align="center" class="mb-3">
+              <!--  <div align="center" class="mb-3">
                   <p class="subtitle-1">
                       年齢、性別関係なく応募で集まったメンバーによるチアダンスショー
                   </p>
                   <p class="headline blue--text">エントリー無料!!<br>(定員になり次第締切)</p>
-                </div>
+                </div>  -->
                   <v-list-item class="mb-2 subtitle-1 text-center">
                     <v-list-item-content>
                       <v-list-item-title>4月25日(土)</v-list-item-title>
@@ -125,7 +125,7 @@
                     </v-carousel-item>
                   </v-carousel>
                 </template>
-                <v-simple-table class="mb-8">
+         <!--       <v-simple-table class="mb-8">
                     <template v-slot:default>
                     <tbody>
                         <tr v-for="item in details" :key="item.name">
@@ -154,8 +154,8 @@
                     </li>
                 </ul>
               <div align="center">
-       <!--         <v-btn to="/form/participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> -->
-              </div>
+                <v-btn to="/form/participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
+              </div> -->
             </v-card-text>
         </v-card>
     </v-container>
