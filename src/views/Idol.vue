@@ -47,12 +47,6 @@
             </v-img>
             <v-card-text class="py-10">
             <Title :title="'ご当地アイドルでショー'"></Title>
-              <!--  <div align="center" class="mb-3">
-                  <p class="subtitle-1">
-                      年齢、性別関係なく応募で集まったメンバーによるチアダンスショー
-                  </p>
-                  <p class="headline blue--text">エントリー無料!!<br>(定員になり次第締切)</p>
-                </div>  -->
                   <v-list-item class="mb-2 subtitle-1 text-center">
                     <v-list-item-content>
                       <v-list-item-title>4月25日(土)</v-list-item-title>
@@ -125,37 +119,6 @@
                     </v-carousel-item>
                   </v-carousel>
                 </template>
-         <!--       <v-simple-table class="mb-8">
-                    <template v-slot:default>
-                    <tbody>
-                        <tr v-for="item in details" :key="item.name">
-                        <td width="35%" class="font-weight-bold">{{ item.title }}</td>
-                        <td width="65%" style="white-space:pre-wrap; word-wrap:break-word;">{{ item.text }}</td>
-                        </tr>
-                    </tbody>
-                    </template>
-                </v-simple-table>
-                <p align="center" class="title font-weight-bold">
-                    募集要項
-                </p>
-                <ul class="subtitle-1 mb-8">
-                    <li>
-                      人数<br>
-                      ４名以上とし、男女問わない。<br>年代別による編成分けはなく自由。様々な学年や年齢が混じったチームも可能
-                    </li>
-                    <li>
-                      ステージ<br>
-                      約横15m × 奥行き10m
-                    </li>
-                    <li>
-                      演技時間<br>
-                      2分以上4分以内<br>
-                      ※エントリーに際し、重複エントリーも可能です。エントリーの際、お申し出下さい。ただし、十分な時間の確保はできません。
-                    </li>
-                </ul>
-              <div align="center">
-                <v-btn to="/form/participants_cheer" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
-              </div> -->
             </v-card-text>
         </v-card>
     </v-container>
@@ -178,7 +141,7 @@ import Title from '../components/Title.vue';
     data () {
       return {
         text: 'Wakuwaku Festival',
-        details: [
+   /*     details: [
           {
             title: '日時',
             text: `2020年4月25日(土)26日(日)
@@ -200,7 +163,7 @@ import Title from '../components/Title.vue';
             title: 'ジャンル',
             text: 'ジャンル規定なし'
           },
-        ],
+        ],*/
         slides_sat: [
           require('@/assets/img/idol25-1.jpg'),
           require('@/assets/img/idol26-1.jpg'),
