@@ -96,7 +96,7 @@
                 <template>
                   <v-carousel
                     cycle
-                    height="500"
+                    height="550"
                     show-arrows-on-hover
                     interval="4000"
                     class="mb-9 carousel"
@@ -112,7 +112,7 @@
                        align="center"
                        justify="center"
                       >
-                       <v-img class="pc" :aspect-ratio="16/9" :src="slide" contain alt="ゲスト"></v-img>
+                       <v-img class="pc" :aspect-ratio="16/8" :src="slide" contain alt="ゲスト"></v-img>
                        <v-img class="sp" :aspect-ratio="16/16" :src="slide" contain alt="ゲスト"></v-img>
                       </v-row>
                      </v-sheet>
@@ -141,29 +141,6 @@ import Title from '../components/Title.vue';
     data () {
       return {
         text: 'Wakuwaku Festival',
-   /*     details: [
-          {
-            title: '日時',
-            text: `2020年4月25日(土)26日(日)
-11:00受付開始 12:00スタート 15:00 終了`
-          },
-          {
-            title: 'エントリー費',
-            text: '無料（会場入場料別）'
-          },
-          {
-            title: '対象年齢',
-            text: 'なし'
-          },
-          {
-            title: 'チーム数',
-            text: '各30チーム(合計 60チーム)'
-          },
-          {
-            title: 'ジャンル',
-            text: 'ジャンル規定なし'
-          },
-        ],*/
         slides_sat: [
           require('@/assets/img/idol25-1.jpg'),
           require('@/assets/img/idol26-1.jpg'),
