@@ -67,6 +67,8 @@
                         <li>Az1</li>
                         <li>村脇優</li>
                         <li>小島千輝</li>
+                        <li>SAMON & AViA（from カルテット）</li>
+                        <li>iKKOKU</li>
                       </ul>
                     </div>                 
                   </div>
@@ -148,6 +150,8 @@ import Title from '../components/Title.vue';
           require('@/assets/img/idol25-3.jpg'),
           require('@/assets/img/idol25-4.jpg'),
           require('@/assets/img/idol25-5.jpg'),
+          require('@/assets/img/idol25-6.jpg'),
+          require('@/assets/img/idol25-7.jpg'),
         ],
       }
     },
