@@ -3,9 +3,9 @@
          <div class="my-5 text-center">
             <v-btn x-large outlined color="warning" width="450px" dark to="/participants_dance">わくフェスキッズダンス<br>コンテストエントリーページへ</v-btn>
          </div>
-        <div align="center">
+   <!--     <div align="center">
            coming soon...
-       </div>
+       </div>-->
     </v-container>
 </template> 
 

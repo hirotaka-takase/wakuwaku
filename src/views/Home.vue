@@ -7,6 +7,31 @@
         alt="わくわくフェスティバル"
     >
     </v-img>
+    <v-container>
+      <div>
+        <p class="title text-center">【わくわくフェスティバル延期のご通知】</p>
+        <p>令和2年4月25日（土）、26日（日）に開催予定でありました「わくわくフェスティバル」は、新型肺炎・コロナウイルスの影響による社会状勢を鑑み、皆様の健康への影響を考慮した結果、止む無く延期とさせていただく事になりました。
+        主催者としましては、わくフェス（呼称）開催に向け万全の準備をしておりましたので大変残念なところでございます。
+        楽しみにされていたお客様にはご迷惑をおかけしますことをお詫び申し上げます。
+        以上、新型肺炎・コロナウイルスによるこの度の、わくフェス（呼称）延期につきましては何卒ご理解いただけますようお願い申し上げます。
+        引き続きわくわくフェスティバルの変わらぬご愛顧何卒よろしくお願い申し上げる次第です。</p>
+      </div>
+      <div>
+        <p class="title text-center">【わくわくフェスティバル代替開催日決定のお知らせ】</p>
+        <p>令和2年4月25日（土）、26日（日）に予定していた、わくフェス（呼称）延期につき、令和2年10月24日（土）、25日（日）に代替開催することに決定いたしました。
+          会場は今回同様AICHI SKY EXPO（愛知国際会議展示場）ホールFです。こちらも1万人収容の大展示場となっております。
+          愛犬家はもとよりお子様から大人まで楽しんでいただけるフェスとして万全の準備をして参ります。</p>
+      </div>
+      <div>
+        <p class="title text-center">【チケット払い戻し】</p>
+        <p>令和2年4月25日（土）、26日（日）に開催予定していた、わくフェス（呼称）延期に伴い、すでにお買い求めていただいている前売りチケットは払い戻しをさせていただきます。
+          払い戻しの詳細についてはお買い求めいただいた下記のURLをご覧ください。<br>
+          「ローソンチケット」<a href="http://l-tike.com/oc/lt/haraimodoshi/" target="_blank" rel="noopener">http://l-tike.com/oc/lt/haraimodoshi/</a><br>
+          「チケットぴあ」<a href="http://md.pia.jp/pia/guide/refund.jsp" target="_blank" rel="noopener">http://md.pia.jp/pia/guide/refund.jsp</a><br>
+          「e+（イープラス）」<a href="http://eplus.jp/refund1/" target="_blank" rel="noopener">http://eplus.jp/refund1/</a></p>
+      </div>
+    </v-container>
+    <!--
     <v-parallax
     height="560"
     dark
@@ -14,7 +39,6 @@
     src="@/assets/img/top-dog.jpg"
     alt="ワンチャン"
     >
-
         <v-container class="top-desc">
           <div class="wf-roundedmplus1c d-flex justify-center mb-8" style="font-weight: bold;">
             <div>
@@ -279,6 +303,7 @@
     </div>
   </div>
   </v-container>
+  -->
   </div>
 </template>
 
