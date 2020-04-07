@@ -9,6 +9,7 @@
     </v-img>
     <v-container>
       <div>
+        <p class="display-1 text-center" style="color: #42A5F5;">代替開催日決定！<br><span class="headline">令和2年10月24日（土）・25日（日）</span></p>
         <p class="title text-center">【わくわくフェスティバル延期のご通知】</p>
         <p>令和2年4月25日（土）、26日（日）に開催予定でありました「わくわくフェスティバル」は、新型肺炎・コロナウイルスの影響による社会状勢を鑑み、皆様の健康への影響を考慮した結果、止む無く延期とさせていただく事になりました。
         主催者としましては、わくフェス（呼称）開催に向け万全の準備をしておりましたので大変残念なところでございます。
@@ -26,9 +27,10 @@
         <p class="title text-center">【チケット払い戻し】</p>
         <p>令和2年4月25日（土）、26日（日）に開催予定していた、わくフェス（呼称）延期に伴い、すでにお買い求めていただいている前売りチケットは払い戻しをさせていただきます。
           払い戻しの詳細についてはお買い求めいただいた下記のURLをご覧ください。<br>
-          「ローソンチケット」<a href="http://l-tike.com/oc/lt/haraimodoshi/" target="_blank" rel="noopener">http://l-tike.com/oc/lt/haraimodoshi/</a><br>
-          「チケットぴあ」<a href="http://md.pia.jp/pia/guide/refund.jsp" target="_blank" rel="noopener">http://md.pia.jp/pia/guide/refund.jsp</a><br>
-          「e+（イープラス）」<a href="http://eplus.jp/refund1/" target="_blank" rel="noopener">http://eplus.jp/refund1/</a></p>
+          「ローソンチケット」<br><a href="http://l-tike.com/oc/lt/haraimodoshi/" target="_blank" rel="noopener">http://l-tike.com/oc/lt/haraimodoshi/</a><br>
+          「チケットぴあ」<br><a href="http://md.pia.jp/pia/guide/refund.jsp" target="_blank" rel="noopener">http://md.pia.jp/pia/guide/refund.jsp</a><br>
+          「e+（イープラス）」<br><a href="http://eplus.jp/refund1/" target="_blank" rel="noopener">http://eplus.jp/refund1/</a></p>
+          <p>※今回お買い求めいただいた4月25日・26日のチケットは、代替開催の10月24日・25日でも有効となりますのでチケットをお持ちの上、お越しください。</p>
       </div>
     </v-container>
     <!--
